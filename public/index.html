@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Daftar Novel</title>
+</head>
+<body>
+    <h1>📚 Novel Library</h1>
+
+    <button onclick="getNovels()">📖 Lihat Semua Novel</button>
+    <button onclick="toggleAddForm()">➕ Tambah Novel</button>
+    <button onclick="toggleSearchForm()">🔍 Cari Novel</button>
+
+    <!-- Daftar Novel -->
+    <div id="novel-list-container" style="display:none;">
+        <h2>📜 Daftar Novel</h2>
+        <ul id="novel-list"></ul>
+    </div>
+
+    <!-- Form Tambah Novel -->
+    <div id="add-novel-container" style="display:none;">
+        <h2>➕ Tambah Novel</h2>
+        <input type="text" id="title" placeholder="Judul Novel"><br>
+        <input type="text" id="author" placeholder="Penulis"><br>
+        <input type="number" id="year" placeholder="Tahun"><br>
+        <input type="text" id="genre" placeholder="Genre"><br>
+        <input type="number" id="pages" placeholder="Jumlah Halaman"><br>
+        <input type="number" id="rating" step="0.1" min="0" max="5" placeholder="Rating (0-5)"><br>
+        <textarea id="summary" placeholder="Ringkasan"></textarea><br>
+        <button onclick="addNovel()">✅ Tambah</button>
+        <button onclick="toggleAddForm()">❌ Tutup</button>
+    </div>
+
+    <!-- Form Cari Novel -->
+    <div id="search-novel-container" style="display:none;">
+        <h2>🔍 Cari Novel</h2>
+        <input type="text" id="search-title" placeholder="Masukkan Judul">
+        <button onclick="searchNovel()">🔎 Cari</button>
+        <div id="search-result"></div>
+        <button onclick="toggleSearchForm()">❌ Tutup</button>
+    </div>
+
+    <script>
+        // ✅ Tampilkan daftar novel
+        async function getNovels() {
+            try {
+                const res = await fetch("/novels");
+                if (!res.ok) throw new Error("Gagal mengambil data novel");
+
+                const data = await res.json();
+                const listContainer = document.getElementById("novel-list-container");
+                const list = document.getElementById("novel-list");
+
+                listContainer.style.display = "block";
+                list.innerHTML = "";
+
+                if (!data.novels || data.novels.length === 0) {
+                    list.innerHTML = "<li>Belum ada novel yang tersedia.</li>";
+                } else {
+                    data.novels.forEach(novel => {
+                        list.innerHTML += `<li><strong>${novel.title}</strong> - ${novel.author} (${novel.year})</li>`;
+                    });
+                }
+            } catch (error) {
+                alert(error.message);
+            }
+        }
+
+        // ✅ Tambah novel baru dengan validasi
+        async function addNovel() {
+            const title = document.getElementById("title").value.trim();
+            const author = document.getElementById("author").value.trim();
+            const year = document.getElementById("year").value.trim();
+            const genre = document.getElementById("genre").value.trim();
+            const pages = document.getElementById("pages").value.trim();
+            const rating = document.getElementById("rating").value.trim();
+            const summary = document.getElementById("summary").value.trim();
+
+            if (!title || !author || !year || !genre || !pages || !rating || !summary) {
+                alert("Semua data harus diisi!");
+                return;
+            }
+
+            try {
+                const res = await fetch("/novels", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ title, author, year, genre, pages, rating, summary }),
+                });
+
+                const result = await res.json();
+                if (!res.ok) throw new Error(result.message || "Gagal menambahkan novel");
+
+                alert("Novel berhasil ditambahkan!");
+                getNovels();
+                toggleAddForm(); // Sembunyikan form setelah berhasil
+            } catch (error) {
+                alert(error.message);
+            }
+        }
+
+        // ✅ Cari novel berdasarkan judul
+        async function searchNovel() {
+            const title = document.getElementById("search-title").value.trim();
+            if (!title) {
+                alert("Masukkan judul novel yang ingin dicari!");
+                return;
+            }
+
+            try {
+                const res = await fetch(`/novels/${title}`);
+                const resultContainer = document.getElementById("search-result");
+
+                if (!res.ok) {
+                    resultContainer.innerHTML = "<p>Novel tidak ditemukan.</p>";
+                    return;
+                }
+
+                const data = await res.json();
+                resultContainer.innerHTML = `<h3>${data.title}</h3>
+                    <p><strong>Penulis:</strong> ${data.author}</p>
+                    <p><strong>Tahun:</strong> ${data.year}</p>
+                    <p><strong>Genre:</strong> ${data.genre}</p>
+                    <p><strong>Halaman:</strong> ${data.pages}</p>
+                    <p><strong>Rating:</strong> ${data.rating}</p>
+                    <p><strong>Ringkasan:</strong> ${data.summary}</p>`;
+            } catch (error) {
+                alert("Terjadi kesalahan saat mencari novel.");
+            }
+        }
+
+        // ✅ Tampilkan / sembunyikan form
+        function toggleAddForm() {
+            const form = document.getElementById("add-novel-container");
+            form.style.display = form.style.display === "none" || form.style.display === "" ? "block" : "none";
+        }
+
+        function toggleSearchForm() {
+            const form = document.getElementById("search-novel-container");
+            form.style.display = form.style.display === "none" || form.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

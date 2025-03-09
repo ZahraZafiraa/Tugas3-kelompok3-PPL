@@ -1,0 +1,1849 @@
+{
+  "novels": [
+    {
+      "title": "Bumi Manusia",
+      "year": 1980,
+      "author": "Pramoedya Ananta Toer",
+      "genre": "Sejarah",
+      "pages": 535,
+      "rating": 9.4,
+      "summary": "Novel pertama dari Tetralogi Buru yang menceritakan kisah Minke, seorang pribumi yang bersekolah di HBS pada masa kolonial Belanda."
+    },
+    {
+      "title": "Laskar Pelangi",
+      "year": 2005,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 529,
+      "rating": 9.2,
+      "summary": "Kisah perjuangan 10 anak dari keluarga miskin di Belitung untuk mendapatkan pendidikan di SD Muhammadiyah."
+    },
+    {
+      "title": "Cantik Itu Luka",
+      "year": 2002,
+      "author": "Eka Kurniawan",
+      "genre": "Fiksi Sejarah",
+      "pages": 537,
+      "rating": 8.9,
+      "summary": "Novel yang mengisahkan tentang Dewi Ayu, seorang pelacur cantik yang bangkit dari kubur setelah dua puluh satu tahun kematiannya."
+    },
+    {
+      "title": "Lelaki Harimau",
+      "year": 2004,
+      "author": "Eka Kurniawan",
+      "genre": "Fiksi Magis",
+      "pages": 192,
+      "rating": 8.7,
+      "summary": "Novel yang menceritakan kisah Margio yang memiliki harimau putih dalam dirinya, simbol amarah dan kekerasan warisan nenek moyangnya."
+    },
+    {
+      "title": "Laut Bercerita",
+      "year": 2017,
+      "author": "Leila S. Chudori",
+      "genre": "Fiksi Sejarah",
+      "pages": 402,
+      "rating": 9.3,
+      "summary": "Novel tentang aktivis mahasiswa yang hilang pada masa Orde Baru dan dampaknya terhadap keluarga yang ditinggalkan."
+    },
+    {
+      "title": "Sang Pemimpi",
+      "year": 2006,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 292,
+      "rating": 8.9,
+      "summary": "Lanjutan dari Laskar Pelangi yang mengisahkan perjalanan Ikal dan Arai mengejar mimpi untuk kuliah di Sorbonne, Prancis."
+    },
+    {
+      "title": "Pulang",
+      "year": 2012,
+      "author": "Leila S. Chudori",
+      "genre": "Fiksi Sejarah",
+      "pages": 476,
+      "rating": 9,
+      "summary": "Novel tentang eksil politik Indonesia di Paris setelah peristiwa 1965 dan kerinduan mereka untuk pulang ke tanah air."
+    },
+    {
+      "title": "Gadis Pantai",
+      "year": 1987,
+      "author": "Pramoedya Ananta Toer",
+      "genre": "Fiksi Sejarah",
+      "pages": 270,
+      "rating": 8.8,
+      "summary": "Kisah seorang gadis desa yang dijadikan istri seorang priyayi dan harus menghadapi realitas pahit tentang perbedaan kelas."
+    },
+    {
+      "title": "Negeri 5 Menara",
+      "year": 2009,
+      "author": "Ahmad Fuadi",
+      "genre": "Fiksi Inspiratif",
+      "pages": 424,
+      "rating": 9.1,
+      "summary": "Kisah persahabatan enam santri dari berbagai daerah di Indonesia yang belajar di Pondok Madani dan bermimpi menjelajahi dunia."
+    },
+    {
+      "title": "Perahu Kertas",
+      "year": 2010,
+      "author": "Dee Lestari",
+      "genre": "Romance",
+      "pages": 444,
+      "rating": 8.5,
+      "summary": "Kisah cinta antara Kugy yang eksentrik dan Keenan yang melukis, serta perjalanan mereka menemukan jati diri."
+    },
+    {
+      "title": "Supernova: Kesatria, Putri, dan Bintang Jatuh",
+      "year": 2001,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 336,
+      "rating": 8.8,
+      "summary": "Novel yang menggabungkan percintaan, fisika kuantum, dan filsafat dalam satu narasi yang kompleks."
+    },
+    {
+      "title": "Edensor",
+      "year": 2007,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 310,
+      "rating": 8.6,
+      "summary": "Kisah lanjutan Sang Pemimpi, menceritakan petualangan Ikal dan Arai di Eropa dalam mengejar impian mereka."
+    },
+    {
+      "title": "Anak Semua Bangsa",
+      "year": 1981,
+      "author": "Pramoedya Ananta Toer",
+      "genre": "Sejarah",
+      "pages": 352,
+      "rating": 9.2,
+      "summary": "Buku kedua dari Tetralogi Buru, melanjutkan kisah Minke yang mulai menyadari ketidakadilan kolonialisme Belanda."
+    },
+    {
+      "title": "Jejak Langkah",
+      "year": 1985,
+      "author": "Pramoedya Ananta Toer",
+      "genre": "Sejarah",
+      "pages": 645,
+      "rating": 9.3,
+      "summary": "Buku ketiga dari Tetralogi Buru, mengisahkan Minke yang mendirikan organisasi dan koran untuk melawan penjajahan."
+    },
+    {
+      "title": "Rumah Kaca",
+      "year": 1988,
+      "author": "Pramoedya Ananta Toer",
+      "genre": "Sejarah",
+      "pages": 646,
+      "rating": 9.1,
+      "summary": "Buku terakhir dari Tetralogi Buru, mengisahkan penangkapan dan pembuangan Minke oleh pemerintah kolonial."
+    },
+    {
+      "title": "5 cm",
+      "year": 2005,
+      "author": "Donny Dhirgantoro",
+      "genre": "Petualangan",
+      "pages": 381,
+      "rating": 8.7,
+      "summary": "Novel tentang lima sahabat yang memutuskan untuk tidak bertemu selama tiga bulan dan kemudian mendaki Gunung Semeru bersama."
+    },
+    {
+      "title": "Ayat-Ayat Cinta",
+      "year": 2004,
+      "author": "Habiburrahman El Shirazy",
+      "genre": "Islami",
+      "pages": 419,
+      "rating": 8.5,
+      "summary": "Kisah cinta seorang mahasiswa Indonesia di Mesir yang harus menghadapi dilema poligami."
+    },
+    {
+      "title": "Tenggelamnya Kapal Van der Wijck",
+      "year": 1938,
+      "author": "Hamka",
+      "genre": "Romance",
+      "pages": 225,
+      "rating": 8.9,
+      "summary": "Kisah cinta Zainuddin dan Hayati yang terhalang oleh adat Minangkabau yang kuat."
+    },
+    {
+      "title": "Dilan: Dia adalah Dilanku Tahun 1990",
+      "year": 2014,
+      "author": "Pidi Baiq",
+      "genre": "Romance",
+      "pages": 332,
+      "rating": 8.6,
+      "summary": "Kisah cinta antara Milea dan Dilan, seorang anggota geng motor yang nyentrik di Bandung tahun 1990."
+    },
+    {
+      "title": "Manusia Setengah Salmon",
+      "year": 2011,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 264,
+      "rating": 8,
+      "summary": "Kumpulan cerita lucu tentang kehidupan pribadi penulis dan perjalanannya mendewasa."
+    },
+    {
+      "title": "Rindu",
+      "year": 2014,
+      "author": "Tere Liye",
+      "genre": "Sejarah",
+      "pages": 544,
+      "rating": 9,
+      "summary": "Kisah penumpang kapal haji dari Hindia Belanda ke Jeddah tahun 1938 dan perjalanan mereka menemukan makna kehidupan."
+    },
+    {
+      "title": "Hujan",
+      "year": 2016,
+      "author": "Tere Liye",
+      "genre": "Fiksi",
+      "pages": 320,
+      "rating": 8.8,
+      "summary": "Kisah cinta Lail dan Esok yang bertemu setelah bencana gunung meletus, dan bagaimana hujan selalu mengiringi momen penting hidup mereka."
+    },
+    {
+      "title": "Filosofi Kopi",
+      "year": 2006,
+      "author": "Dee Lestari",
+      "genre": "Kumpulan Cerita",
+      "pages": 152,
+      "rating": 8.4,
+      "summary": "Kumpulan cerpen yang salah satunya berkisah tentang Ben dan Jody yang mendirikan kedai kopi dan mencari resep kopi terbaik."
+    },
+    {
+      "title": "Rentang Kisah",
+      "year": 2018,
+      "author": "Gita Savitri Devi",
+      "genre": "Memoir",
+      "pages": 208,
+      "rating": 8.3,
+      "summary": "Memoar tentang perjalanan hidup penulis selama di Jerman dan proses menemukan jati dirinya."
+    },
+    {
+      "title": "Radikus Makankakus",
+      "year": 2013,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 240,
+      "rating": 7.9,
+      "summary": "Kumpulan cerita lucu tentang keluarga, cinta, dan pengalaman kehidupan penulis."
+    },
+    {
+      "title": "Ranah 3 Warna",
+      "year": 2011,
+      "author": "Ahmad Fuadi",
+      "genre": "Fiksi Inspiratif",
+      "pages": 473,
+      "rating": 8.9,
+      "summary": "Lanjutan dari Negeri 5 Menara yang menceritakan perjuangan Alif mengejar beasiswa ke luar negeri."
+    },
+    {
+      "title": "Maryamah Karpov",
+      "year": 2008,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 504,
+      "rating": 8.5,
+      "summary": "Bagian terakhir dari tetralogi Laskar Pelangi yang mengisahkan perjalanan Ikal kembali ke Belitung demi cinta pertamanya."
+    },
+    {
+      "title": "Saman",
+      "year": 1998,
+      "author": "Ayu Utami",
+      "genre": "Fiksi Kontemporer",
+      "pages": 208,
+      "rating": 8.7,
+      "summary": "Novel yang mengangkat tema tabu seperti seksualitas, agama, dan politik dari perspektif empat sahabat perempuan."
+    },
+    {
+      "title": "Larung",
+      "year": 2001,
+      "author": "Ayu Utami",
+      "genre": "Fiksi Kontemporer",
+      "pages": 270,
+      "rating": 8.5,
+      "summary": "Lanjutan dari novel Saman yang mengeksplorasi lebih dalam tentang karakter-karakter dari novel sebelumnya."
+    },
+    {
+      "title": "Bumi",
+      "year": 2014,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 440,
+      "rating": 8.9,
+      "summary": "Novel pertama dari serial Bumi yang mengisahkan petualangan Raib, seorang gadis dengan kemampuan menghilang, di dunia paralel."
+    },
+    {
+      "title": "Bulan",
+      "year": 2015,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 400,
+      "rating": 8.8,
+      "summary": "Lanjutan dari novel Bumi yang mengisahkan petualangan Raib dan teman-temannya di Bulan, dunia paralel lainnya."
+    },
+    {
+      "title": "Matahari",
+      "year": 2016,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 390,
+      "rating": 8.7,
+      "summary": "Novel ketiga dari serial Bumi yang mengisahkan petualangan Raib, Ali, dan Seli di Matahari."
+    },
+    {
+      "title": "Bintang",
+      "year": 2017,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 392,
+      "rating": 8.8,
+      "summary": "Novel keempat dari serial Bumi yang mengisahkan petualangan Raib, Ali, dan Seli mencari pasak bumi di dunia Bintang."
+    },
+    {
+      "title": "Komet",
+      "year": 2018,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 384,
+      "rating": 8.7,
+      "summary": "Novel kelima dari serial Bumi yang melanjutkan petualangan Raib dan teman-temannya."
+    },
+    {
+      "title": "Komet Minor",
+      "year": 2019,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 376,
+      "rating": 8.6,
+      "summary": "Novel keenam dari serial Bumi yang menghadirkan petualangan baru bagi Raib, Ali, dan Seli."
+    },
+    {
+      "title": "Selena",
+      "year": 2020,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 368,
+      "rating": 8.8,
+      "summary": "Novel ketujuh dari serial Bumi yang mengisahkan tentang Selena, sosok misterius dalam kehidupan Raib."
+    },
+    {
+      "title": "Nebula",
+      "year": 2020,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 376,
+      "rating": 8.7,
+      "summary": "Novel kedelapan dari serial Bumi yang menceritakan kelanjutan petualangan Raib, Ali, dan Seli."
+    },
+    {
+      "title": "Lumpu",
+      "year": 2021,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 360,
+      "rating": 8.9,
+      "summary": "Novel kesembilan dari serial Bumi yang mengisahkan tentang Lumpu, salah satu musuh terkuat yang dihadapi Raib dan teman-temannya."
+    },
+    {
+      "title": "Bibi Gill",
+      "year": 2022,
+      "author": "Tere Liye",
+      "genre": "Fantasi",
+      "pages": 352,
+      "rating": 8.8,
+      "summary": "Novel kesepuluh dari serial Bumi yang mengungkap kisah Bibi Gill, sosok misterius dalam petualangan Raib."
+    },
+    {
+      "title": "Dear Nathan",
+      "year": 2016,
+      "author": "Erisca Febriani",
+      "genre": "Romance",
+      "pages": 528,
+      "rating": 8.3,
+      "summary": "Kisah cinta antara Salma, siswi teladan, dan Nathan, siswa berandalan dengan masa lalu kelam."
+    },
+    {
+      "title": "Ketika Cinta Bertasbih",
+      "year": 2007,
+      "author": "Habiburrahman El Shirazy",
+      "genre": "Islami",
+      "pages": 480,
+      "rating": 8.6,
+      "summary": "Kisah perjuangan Azzam, mahasiswa Indonesia di Al-Azhar yang bekerja keras menghidupi keluarganya sambil mencari jodoh."
+    },
+    {
+      "title": "Nikah Dini Taaruf Kilat",
+      "year": 2020,
+      "author": "Asma Nadia",
+      "genre": "Romance Islami",
+      "pages": 272,
+      "rating": 8.2,
+      "summary": "Novel yang mengisahkan pernikahan dini dan proses taaruf singkat yang dialami tokoh utamanya."
+    },
+    {
+      "title": "Tentang Kamu",
+      "year": 2016,
+      "author": "Tere Liye",
+      "genre": "Romance",
+      "pages": 524,
+      "rating": 9.2,
+      "summary": "Kisah perjalanan hidup Sri Ningsih dari desa kecil di Flores hingga menjadi wanita terkaya di Eropa."
+    },
+    {
+      "title": "Cinta di Dalam Gelas",
+      "year": 2005,
+      "author": "Andrea Hirata",
+      "genre": "Romance",
+      "pages": 268,
+      "rating": 8.4,
+      "summary": "Kisah cinta Maryamah yang berjuang menjadi pemain catur profesional untuk mengembalikan harga diri perempuan di Belitung."
+    },
+    {
+      "title": "Padang Bulan",
+      "year": 2010,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 274,
+      "rating": 8.5,
+      "summary": "Kisah Enong, gadis kecil yang kehilangan ayahnya dan terpaksa menjadi penambang timah untuk menghidupi keluarganya."
+    },
+    {
+      "title": "Berjuta Rasanya",
+      "year": 2012,
+      "author": "Tere Liye",
+      "genre": "Romance",
+      "pages": 204,
+      "rating": 8.3,
+      "summary": "Kumpulan cerpen tentang berbagai rasa dan pengalaman dalam kehidupan, cinta, dan persahabatan."
+    },
+    {
+      "title": "Hafalan Shalat Delisa",
+      "year": 2005,
+      "author": "Tere Liye",
+      "genre": "Fiksi",
+      "pages": 248,
+      "rating": 8.9,
+      "summary": "Kisah gadis kecil bernama Delisa yang berjuang menghafal bacaan shalat di tengah bencana tsunami Aceh 2004."
+    },
+    {
+      "title": "Daun Yang Jatuh Tak Pernah Membenci Angin",
+      "year": 2010,
+      "author": "Tere Liye",
+      "genre": "Romance",
+      "pages": 264,
+      "rating": 8.7,
+      "summary": "Kisah cinta Tania, seorang gadis yatim piatu yang jatuh cinta pada pria yang telah menolongnya dan keluarganya."
+    },
+    {
+      "title": "Sepotong Hati yang Baru",
+      "year": 2012,
+      "author": "Tere Liye",
+      "genre": "Kumpulan Cerita",
+      "pages": 204,
+      "rating": 8.4,
+      "summary": "Kumpulan cerpen tentang kehidupan, cinta, dan pelajaran hidup yang mengharukan."
+    },
+    {
+      "title": "Bedebah Di Ujung Tanduk",
+      "year": 2013,
+      "author": "Tere Liye",
+      "genre": "Thriller",
+      "pages": 368,
+      "rating": 8.8,
+      "summary": "Novel aksi dan intrik politik yang menceritakan Thomas, konsultan keuangan yang terjebak dalam konspirasi berbahaya."
+    },
+    {
+      "title": "Negeri Di Ujung Tanduk",
+      "year": 2013,
+      "author": "Tere Liye",
+      "genre": "Thriller",
+      "pages": 360,
+      "rating": 8.9,
+      "summary": "Lanjutan dari Bedebah Di Ujung Tanduk yang mengisahkan petualangan Thomas melawan korupsi dan politik kotor."
+    },
+    {
+      "title": "Ayahku (Bukan) Pembohong",
+      "year": 2011,
+      "author": "Tere Liye",
+      "genre": "Keluarga",
+      "pages": 292,
+      "rating": 8.6,
+      "summary": "Kisah seorang anak yang merasa ayahnya selalu berbohong karena cerita-cerita fantastis yang diceritakan sang ayah."
+    },
+    {
+      "title": "Sunset Bersama Rosie",
+      "year": 2008,
+      "author": "Tere Liye",
+      "genre": "Romance",
+      "pages": 426,
+      "rating": 8.5,
+      "summary": "Kisah persahabatan dan cinta Tegar dan Rosie yang dimulai sejak kecil hingga dewasa."
+    },
+    {
+      "title": "Supernova: Akar",
+      "year": 2002,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 278,
+      "rating": 8.7,
+      "summary": "Novel kedua dari seri Supernova yang mengisahkan perjalanan Bodhi mencari jati dirinya melalui perjalanan spiritual."
+    },
+    {
+      "title": "Supernova: Petir",
+      "year": 2004,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 260,
+      "rating": 8.6,
+      "summary": "Novel ketiga dari seri Supernova yang mengisahkan Elektra, perempuan yang memiliki kemampuan khusus terkait listrik."
+    },
+    {
+      "title": "Supernova: Partikel",
+      "year": 2012,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 388,
+      "rating": 8.8,
+      "summary": "Novel keempat dari seri Supernova yang mengisahkan Zarah Amala, ahli botani yang mencari kebenaran tentang ibunya."
+    },
+    {
+      "title": "Supernova: Gelombang",
+      "year": 2014,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 390,
+      "rating": 8.7,
+      "summary": "Novel kelima dari seri Supernova yang mengisahkan Alpha, seorang pemuda dengan kemampuan mendengar pikiran orang lain."
+    },
+    {
+      "title": "Supernova: Intelegensi Embun Pagi",
+      "year": 2016,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 416,
+      "rating": 8.9,
+      "summary": "Novel keenam dari seri Supernova yang menyatukan semua karakter dari novel-novel sebelumnya."
+    },
+    {
+      "title": "Rectoverso",
+      "year": 2008,
+      "author": "Dee Lestari",
+      "genre": "Kumpulan Cerita",
+      "pages": 148,
+      "rating": 8.4,
+      "summary": "Kumpulan cerpen yang terinspirasi dari lagu-lagu ciptaan Dee Lestari sendiri."
+    },
+    {
+      "title": "Aroma Karsa",
+      "year": 2018,
+      "author": "Dee Lestari",
+      "genre": "Fiksi",
+      "pages": 720,
+      "rating": 9.2,
+      "summary": "Novel tentang Jati Wesi, pemuda dengan indra penciuman super yang terlibat dalam pencarian tanaman mistis Puspa Karsa."
+    },
+    {
+      "title": "Manusia Setengah Tuhan",
+      "year": 2014,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 280,
+      "rating": 7.8,
+      "summary": "Kumpulan cerita tentang pengalaman lucu penulis dalam kehidupan sehari-hari."
+    },
+    {
+      "title": "Cinta Brontosaurus",
+      "year": 2006,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 156,
+      "rating": 8.2,
+      "summary": "Kumpulan cerita lucu tentang pengalaman cinta penulis yang tak seperti kebanyakan orang."
+    },
+    {
+      "title": "Marmut Merah Jambu",
+      "year": 2010,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 208,
+      "rating": 8,
+      "summary": "Kisah lucu tentang pengalaman cinta dan persahabatan yang dialami penulis."
+    },
+    {
+      "title": "Bidadari-Bidadari Surga",
+      "year": 2008,
+      "author": "Tere Liye",
+      "genre": "Keluarga",
+      "pages": 368,
+      "rating": 9.1,
+      "summary": "Kisah lima bersaudara dari keluarga miskin di lembah Lahambay yang berjuang untuk bertahan hidup dan meraih mimpi."
+    },
+    {
+      "title": "Laskar Pelangi: Si Geniuses",
+      "year": 2023,
+      "author": "Andrea Hirata",
+      "genre": "Petualangan",
+      "pages": 312,
+      "rating": 8.7,
+      "summary": "Novel terbaru dari saga Laskar Pelangi yang menceritakan petualangan Lintang setelah dewasa."
+    },
+    {
+      "title": "Ayah",
+      "year": 2015,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 412,
+      "rating": 8.7,
+      "summary": "Sebuah kisah tentang perjuangan seorang ayah yang penuh cinta dan pengorbanan untuk anak-anaknya."
+    },
+    {
+      "title": "Geez & Ann",
+      "year": 2017,
+      "author": "Rintik Sedu",
+      "genre": "Romance",
+      "pages": 304,
+      "rating": 8.2,
+      "summary": "Kisah cinta antara Geez yang misterius dan Ann yang sederhana, tentang jatuh cinta dan luka yang ditinggalkan."
+    },
+    {
+      "title": "Pergi",
+      "year": 2018,
+      "author": "Tere Liye",
+      "genre": "Fiksi",
+      "pages": 464,
+      "rating": 8.8,
+      "summary": "Lanjutan dari 'Pulang', kisah perjalanan seorang pembunuh bayaran yang menemukan arti sejati keluarga dan cinta."
+    },
+    {
+      "title": "Critical Eleven",
+      "year": 2015,
+      "author": "Ika Natassa",
+      "genre": "Romance",
+      "pages": 344,
+      "rating": 8.6,
+      "summary": "Kisah cinta Ale dan Anya yang bertemu di pesawat dan menghadapi pasang surut kehidupan rumah tangga."
+    },
+    {
+      "title": "Antologi Rasa",
+      "year": 2011,
+      "author": "Ika Natassa",
+      "genre": "Romance",
+      "pages": 288,
+      "rating": 8.5,
+      "summary": "Kisah cinta segitiga antara Keara, Ruly, dan Harris yang dipenuhi rasa yang tak terungkapkan."
+    },
+    {
+      "title": "Dilan: Dia adalah Dilanku Tahun 1991",
+      "year": 2015,
+      "author": "Pidi Baiq",
+      "genre": "Romance",
+      "pages": 344,
+      "rating": 8.7,
+      "summary": "Lanjutan kisah cinta Dilan dan Milea yang penuh konflik dan kesedihan."
+    },
+    {
+      "title": "Milea: Suara dari Dilan",
+      "year": 2016,
+      "author": "Pidi Baiq",
+      "genre": "Romance",
+      "pages": 360,
+      "rating": 8.8,
+      "summary": "Cerita Dilan dan Milea dari sudut pandang Dilan sendiri."
+    },
+    {
+      "title": "Koala Kumal",
+      "year": 2015,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 250,
+      "rating": 8.3,
+      "summary": "Cerita-cerita lucu seputar patah hati dan bagaimana cara move on dengan cara kocak ala Raditya Dika."
+    },
+    {
+      "title": "Kambing Jantan",
+      "year": 2005,
+      "author": "Raditya Dika",
+      "genre": "Komedi",
+      "pages": 237,
+      "rating": 8.4,
+      "summary": "Buku harian seorang mahasiswa Indonesia yang kuliah di Australia, penuh dengan kejadian lucu dan pengalaman konyol."
+    },
+    {
+      "title": "Malik & Elsa",
+      "year": 2018,
+      "author": "Boy Candra",
+      "genre": "Romance",
+      "pages": 298,
+      "rating": 8.5,
+      "summary": "Kisah cinta antara Malik dan Elsa yang tumbuh di antara persahabatan dan impian masa muda."
+    },
+    {
+      "title": "Origami Hati",
+      "year": 2014,
+      "author": "Boy Candra",
+      "genre": "Romance",
+      "pages": 264,
+      "rating": 8.4,
+      "summary": "Kisah tentang patah hati yang dibalut keindahan metafora tentang origami sebagai simbol kenangan dan perasaan."
+    },
+    {
+      "title": "Cinta Dalam Gelas",
+      "year": 2011,
+      "author": "Andrea Hirata",
+      "genre": "Fiksi",
+      "pages": 276,
+      "rating": 8.6,
+      "summary": "Kisah lanjutan dari Maryamah Karpov, yang menceritakan tentang perjuangan Enong yang ingin menjadi pemain catur terbaik."
+    },
+    {
+      "title": "Rantau 1 Muara",
+      "year": 2013,
+      "author": "Ahmad Fuadi",
+      "genre": "Inspirasi",
+      "pages": 400,
+      "rating": 8.6,
+      "summary": "Perjalanan hidup Alif yang merantau hingga akhirnya menemukan makna 'muara' kehidupan."
+    },
+    {
+      "title": "Gadis Kretek",
+      "year": 2012,
+      "author": "Ratih Kumala",
+      "genre": "Sejarah",
+      "pages": 336,
+      "rating": 8.5,
+      "summary": "Kisah cinta dan sejarah industri kretek Indonesia yang penuh intrik dan rahasia keluarga."
+    },
+    {
+      "title": "Supernova: Ksatria, Puteri dan Bintang Jatuh",
+      "year": 2001,
+      "author": "Dee Lestari",
+      "genre": "Fiksi Ilmiah",
+      "pages": 263,
+      "rating": 8.7,
+      "summary": "Kisah cinta, persahabatan, dan pencarian makna hidup yang dibalut filosofi dan sains."
+    },
+    {
+      "title": "Seperti Dendam, Rindu Harus Dibayar Tuntas",
+      "year": 2014,
+      "author": "Eka Kurniawan",
+      "genre": "Fiksi",
+      "pages": 257,
+      "rating": 8.6,
+      "summary": "Kisah cinta dan kekerasan yang dipenuhi energi liar khas sastra Indonesia modern."
+    },
+    {
+      "title": "Surat Kecil untuk Tuhan",
+      "year": 2008,
+      "author": "Agnes Davonar",
+      "genre": "Drama",
+      "pages": 214,
+      "rating": 8.7,
+      "summary": "Kisah nyata perjuangan seorang gadis remaja melawan kanker yang menyentuh hati."
+    },
+    {
+      "title": "5 Cm",
+      "year": 2005,
+      "author": "Donny Dhirgantoro",
+      "genre": "Inspirasi",
+      "pages": 381,
+      "rating": 8.8,
+      "summary": "Kisah persahabatan lima orang yang memutuskan mendaki Mahameru untuk merayakan mimpi-mimpi mereka."
+    },
+    {
+      "title": "Amba",
+      "author": "Laksmi Pamuntjak",
+      "year": 2012,
+      "genre": "Sejarah",
+      "pages": 496,
+      "rating": 8.6,
+      "summary": "Kisah cinta berlatar tragedi 1965 yang mengangkat tokoh Amba dan Bhisma."
+    },
+    {
+      "title": "Pulang-Pergi",
+      "author": "Tere Liye",
+      "year": 2021,
+      "genre": "Aksi",
+      "pages": 400,
+      "rating": 8.5,
+      "summary": "Petualangan Bujang dari dunia gelap yang kembali berhadapan dengan masa lalunya."
+    },
+    {
+      "title": "Burung-Burung Manyar",
+      "author": "Y.B. Mangunwijaya",
+      "year": 1981,
+      "genre": "Sejarah",
+      "pages": 280,
+      "rating": 8.7,
+      "summary": "Kisah perjalanan hidup Setadewa dari masa penjajahan hingga kemerdekaan."
+    },
+    {
+      "title": "Para Priyayi",
+      "author": "Umar Kayam",
+      "year": 1992,
+      "genre": "Sejarah",
+      "pages": 300,
+      "rating": 8.4,
+      "summary": "Potret keluarga priyayi Jawa yang berjuang mempertahankan tradisi di tengah perubahan zaman."
+    },
+    {
+      "title": "Namaku Teweraut",
+      "author": "Ani Sekarningsih",
+      "year": 2000,
+      "genre": "Sosial",
+      "pages": 180,
+      "rating": 8.3,
+      "summary": "Kisah perjuangan perempuan Papua bernama Teweraut menghadapi ketidakadilan."
+    },
+    {
+      "title": "Sirkus Pohon",
+      "author": "Andrea Hirata",
+      "year": 2017,
+      "genre": "Komedi",
+      "pages": 412,
+      "rating": 8.2,
+      "summary": "Kisah unik Sobri dan cinta pertamanya di tengah kehidupan kampung yang kocak."
+    },
+    {
+      "title": "Jais Darga Namaku",
+      "author": "Putu Wijaya",
+      "year": 2017,
+      "genre": "Drama",
+      "pages": 236,
+      "rating": 8.1,
+      "summary": "Cerita seorang perempuan Indonesia yang merambah dunia seni di Paris."
+    },
+    {
+      "title": "O",
+      "author": "Eka Kurniawan",
+      "year": 2016,
+      "genre": "Fabel Satire",
+      "pages": 320,
+      "rating": 8.5,
+      "summary": "Seekor monyet bernama O bermimpi menikahi manusia dalam dunia penuh absurditas."
+    },
+    {
+      "title": "Suti",
+      "author": "Sapardi Djoko Damono",
+      "year": 2011,
+      "genre": "Sosial",
+      "pages": 120,
+      "rating": 8,
+      "summary": "Kisah kehidupan sederhana seorang perempuan bernama Suti yang penuh kejutan."
+    },
+    {
+      "title": "Bilangan Fu",
+      "author": "Ayu Utami",
+      "year": 2008,
+      "genre": "Spiritual",
+      "pages": 525,
+      "rating": 8.3,
+      "summary": "Perpaduan antara mitos, spiritualitas, dan kisah cinta yang sarat simbolisme."
+    },
+    {
+      "title": "Lelaki Terindah",
+      "author": "Andrei Aksana",
+      "year": 2004,
+      "genre": "Romansa",
+      "pages": 232,
+      "rating": 7.9,
+      "summary": "Cerita cinta segitiga antara dua lelaki dan seorang perempuan yang kompleks."
+    },
+    {
+      "title": "Cerita Cinta Enrico",
+      "author": "Ayu Utami",
+      "year": 2012,
+      "genre": "Drama",
+      "pages": 400,
+      "rating": 8.1,
+      "summary": "Perjalanan hidup Enrico dari kecil hingga dewasa yang diwarnai berbagai kisah cinta."
+    },
+    {
+      "title": "Tabula Rasa",
+      "author": "Ratih Kumala",
+      "year": 2012,
+      "genre": "Drama",
+      "pages": 240,
+      "rating": 8.2,
+      "summary": "Kisah cinta segitiga yang dibalut budaya kuliner Nusantara."
+    },
+    {
+      "title": "Kubah",
+      "author": "Ahmad Tohari",
+      "year": 1980,
+      "genre": "Sejarah",
+      "pages": 200,
+      "rating": 8.4,
+      "summary": "Perjalanan seorang bekas tahanan politik yang berusaha kembali ke masyarakat."
+    },
+    {
+      "title": "Calon Arang",
+      "author": "Pramoedya Ananta Toer",
+      "year": 1999,
+      "genre": "Sejarah",
+      "pages": 220,
+      "rating": 8.5,
+      "summary": "Kisah Calon Arang yang melegenda di Jawa Timur, mengangkat mitos, politik, dan kekuasaan."
+    },
+    {
+      "title": "Sukreni Gadis Bali",
+      "author": "I Nyoman Panji Tisna",
+      "year": 1935,
+      "genre": "Sosial",
+      "pages": 170,
+      "rating": 8.2,
+      "summary": "Potret kehidupan sosial gadis Bali di tengah tekanan budaya dan modernitas."
+    },
+    {
+      "title": "Harimau! Harimau!",
+      "author": "Mochtar Lubis",
+      "year": 1975,
+      "genre": "Petualangan",
+      "pages": 216,
+      "rating": 8.6,
+      "summary": "Perjalanan sekelompok pemburu yang dihadapkan pada ketakutan akan seekor harimau buas."
+    },
+    {
+      "title": "Orang-Orang Bloomington",
+      "author": "Budi Darma",
+      "year": 1980,
+      "genre": "Cerpen",
+      "pages": 168,
+      "rating": 8.4,
+      "summary": "Kumpulan cerita pendek tentang kehidupan orang-orang di kota Bloomington."
+    },
+    {
+      "title": "Merahnya Merah",
+      "author": "Iwan Simatupang",
+      "year": 1968,
+      "genre": "Eksistensialisme",
+      "pages": 210,
+      "rating": 8.5,
+      "summary": "Kisah seorang gelandangan yang mempertanyakan makna hidup, cinta, dan kematian."
+    },
+    {
+      "title": "Langit Makin Mendung",
+      "author": "Kuntowijoyo",
+      "year": 1971,
+      "genre": "Satire",
+      "pages": 130,
+      "rating": 8,
+      "summary": "Cerita pendek kontroversial tentang kondisi sosial-politik Indonesia era 60-an."
+    },
+    {
+      "title": "Parasit Lajang",
+      "author": "Ayu Utami",
+      "year": 2003,
+      "genre": "Drama",
+      "pages": 200,
+      "rating": 8.1,
+      "summary": "Catatan seorang perempuan lajang yang kritis terhadap peran perempuan di masyarakat."
+    },
+    {
+      "title": "Negeri Para Bedebah",
+      "author": "Tere Liye",
+      "year": 2012,
+      "genre": "Thriller",
+      "pages": 440,
+      "rating": 8.3,
+      "summary": "Bujang terjebak dalam konspirasi ekonomi dan politik yang mengancam hidupnya."
+    },
+    {
+      "title": "9 Summers 10 Autumns",
+      "author": "Iwan Setyawan",
+      "year": 2011,
+      "genre": "Biografi",
+      "pages": 230,
+      "rating": 8.4,
+      "summary": "Perjalanan hidup seorang anak sopir angkot dari Batu hingga sukses di New York."
+    },
+    {
+      "title": "The Architecture of Love",
+      "author": "Ika Natassa",
+      "year": 2016,
+      "genre": "Romansa",
+      "pages": 304,
+      "rating": 8.1,
+      "summary": "Kisah cinta antara seorang penulis dan arsitek yang bertemu di New York."
+    },
+    {
+      "title": "Genduk",
+      "author": "Soe Tjen Marching",
+      "year": 2017,
+      "genre": "Sosial",
+      "pages": 272,
+      "rating": 8.2,
+      "summary": "Cerita tentang Genduk, gadis desa Temanggung, menghadapi kerasnya hidup di era 60-an."
+    },
+    {
+      "title": "Pulang Melawan Lupa",
+      "author": "Leila S. Chudori",
+      "year": 2012,
+      "genre": "Sejarah",
+      "pages": 464,
+      "rating": 8.7,
+      "summary": "Kisah diaspora Indonesia yang dipaksa mengungsi pasca tragedi 1965."
+    },
+    {
+      "title": "Seribu Kunang-Kunang di Manhattan",
+      "author": "Umar Kayam",
+      "year": 1972,
+      "genre": "Cerpen",
+      "pages": 160,
+      "rating": 8.3,
+      "summary": "Cerita cinta getir antara perempuan Indonesia dan pria Amerika di Manhattan."
+    },
+    {
+      "title": "Tarian Bumi",
+      "author": "Oka Rusmini",
+      "year": 2000,
+      "genre": "Sosial",
+      "pages": 250,
+      "rating": 8.4,
+      "summary": "Perjuangan perempuan Bali melawan sistem adat patriarki dan stratifikasi kasta."
+    },
+    {
+      "title": "Gentayangan",
+      "author": "Intan Paramaditha",
+      "year": 2017,
+      "genre": "Horror-Fantasi",
+      "pages": 400,
+      "rating": 8.5,
+      "summary": "Novel interaktif tentang perjalanan supranatural penuh pilihan dan konsekuensi."
+    },
+    {
+      "title": "Semua Ikan di Langit",
+      "author": "Ziggy Zezsyazeoviennazabrizkie",
+      "year": 2017,
+      "genre": "Fantasi",
+      "pages": 220,
+      "rating": 8.4,
+      "summary": "Kisah absurd dari sudut pandang sebuah bus kota yang berpetualang ke dimensi lain."
+    },
+    {
+      "title": "Jazz, Parfum, dan Insiden",
+      "author": "Seno Gumira Ajidarma",
+      "year": 1996,
+      "genre": "Eksperimen",
+      "pages": 240,
+      "rating": 8.3,
+      "summary": "Novel eksperimental yang memadukan musik, aroma, dan kejadian misterius di Jakarta."
+    },
+    {
+      "title": "Petir",
+      "author": "Dee Lestari",
+      "year": 2006,
+      "genre": "Fiksi Ilmiah",
+      "pages": 432,
+      "rating": 8.4,
+      "summary": "Kisah Elektra yang menemukan kekuatan listrik dalam dirinya di tengah konspirasi besar."
+    },
+    {
+      "title": "Kenanga",
+      "author": "Oka Rusmini",
+      "year": 2017,
+      "genre": "Sosial",
+      "pages": 308,
+      "rating": 8.2,
+      "summary": "Lanjutan Tarian Bumi yang mengeksplorasi perempuan Bali dalam benturan adat dan modernitas."
+    },
+    {
+      "title": "Tak Ada New York Hari Ini",
+      "author": "M. Aan Mansyur",
+      "year": 2016,
+      "genre": "Puisi",
+      "pages": 144,
+      "rating": 8.1,
+      "summary": "Kumpulan puisi tentang cinta jarak jauh yang terinspirasi film Ada Apa Dengan Cinta 2."
+    },
+    {
+      "title": "Clara Ng",
+      "author": "Gerhana Kembar",
+      "year": 2004,
+      "genre": "Fantasi",
+      "pages": 304,
+      "rating": 8,
+      "summary": "Dua saudari kembar terjebak dalam kutukan magis yang membingungkan takdir mereka."
+    },
+    {
+      "title": "Belenggu",
+      "author": "Armijn Pane",
+      "year": 1940,
+      "genre": "Psikologi",
+      "pages": 150,
+      "rating": 8.3,
+      "summary": "Drama rumah tangga yang mengeksplorasi konflik batin dan kebebasan individu."
+    },
+    {
+      "title": "Lakon Perempuan",
+      "author": "Dorothea Rosa Herliany",
+      "year": 2000,
+      "genre": "Puisi",
+      "pages": 120,
+      "rating": 8.1,
+      "summary": "Kumpulan puisi yang membahas kehidupan perempuan, tubuh, dan pemberontakan."
+    },
+    {
+      "title": "Laki-laki yang Tak Berhenti Menangis",
+      "author": "Umar Kayam",
+      "year": 2001,
+      "genre": "Drama",
+      "pages": 220,
+      "rating": 8.2,
+      "summary": "Kisah pencarian jati diri lelaki yang dihantui masa lalu kelam keluarganya."
+    },
+    {
+      "title": "Corat-Coret di Toilet",
+      "author": "Eka Kurniawan",
+      "year": 2000,
+      "genre": "Cerpen",
+      "pages": 150,
+      "rating": 8,
+      "summary": "Kumpulan cerita pendek yang tajam mengkritik sosial dengan gaya nyentrik."
+    },
+    {
+      "title": "Tempat Terbaik di Dunia",
+      "author": "Debra Yatim",
+      "year": 2018,
+      "genre": "Cerpen",
+      "pages": 160,
+      "rating": 8.1,
+      "summary": "Cerpen-cerpen yang mengeksplorasi identitas, perempuan, dan akar budaya."
+    },
+    {
+      "title": "Burung-Burung Rantau",
+      "author": "Y.B. Mangunwijaya",
+      "year": 1992,
+      "genre": "Sejarah",
+      "pages": 350,
+      "rating": 8.5,
+      "summary": "Kisah keluarga perantau Indonesia yang menghadapi perbedaan ideologi dan mimpi."
+    },
+    {
+      "title": "Maut dan Cinta",
+      "author": "Mochtar Lubis",
+      "year": 1977,
+      "genre": "Spionase",
+      "pages": 260,
+      "rating": 8.4,
+      "summary": "Kisah agen rahasia Indonesia yang terjebak antara tugas negara dan cinta."
+    },
+    {
+      "title": "Lalita",
+      "author": "Dewi Lestari",
+      "year": 2012,
+      "genre": "Misteri",
+      "pages": 368,
+      "rating": 8.2,
+      "summary": "Misteri artefak kuno yang membawa cinta segitiga ke dalam konspirasi besar."
+    },
+    {
+      "title": "Cala Ibi",
+      "author": "Nukila Amal",
+      "year": 2003,
+      "genre": "Eksperimental",
+      "pages": 288,
+      "rating": 8.3,
+      "summary": "Novel puitis yang mengalir bebas mengeksplorasi cinta, mimpi, dan identitas."
+    },
+    {
+      "title": "Atheis",
+      "author": "Achdiat Karta Mihardja",
+      "year": 1949,
+      "genre": "Filsafat",
+      "pages": 248,
+      "rating": 8.5,
+      "summary": "Kisah Hasan yang meninggalkan keyakinannya dan mencari makna hidup."
+    },
+    {
+      "title": "Telegram",
+      "author": "Putu Wijaya",
+      "year": 1972,
+      "genre": "Drama",
+      "pages": 160,
+      "rating": 8.1,
+      "summary": "Kisah absurd tentang telegram misterius yang mengubah hidup seorang penulis."
+    },
+    {
+      "title": "Perempuan Berkalung Sorban",
+      "author": "Abidah El Khalieqy",
+      "year": 2001,
+      "genre": "Sosial",
+      "pages": 310,
+      "rating": 8.3,
+      "summary": "Perjuangan seorang perempuan pesantren melawan budaya patriarki."
+    },
+    {
+      "title": "Jendela-Jendela",
+      "author": "Fira Basuki",
+      "year": 2002,
+      "genre": "Romansa",
+      "pages": 300,
+      "rating": 8,
+      "summary": "Kisah cinta yang tumbuh di antara dua insan yang dipisahkan prinsip hidup."
+    },
+    {
+      "title": "Kemarau",
+      "author": "A.A. Navis",
+      "year": 1985,
+      "genre": "Sosial",
+      "pages": 200,
+      "rating": 8.3,
+      "summary": "Kisah tentang konflik keluarga dan ketimpangan sosial di tengah musim kemarau panjang."
+    },
+    {
+      "title": "Sang Raja",
+      "author": "Iqbal Aji Daryono",
+      "year": 2018,
+      "genre": "Satire",
+      "pages": 230,
+      "rating": 8.2,
+      "summary": "Kumpulan kisah absurd tentang kehidupan sosial dan politik di Indonesia."
+    },
+    {
+      "title": "Dua Ibu",
+      "author": "Arswendo Atmowiloto",
+      "year": 1981,
+      "genre": "Keluarga",
+      "pages": 248,
+      "rating": 8.4,
+      "summary": "Kisah menyentuh tentang anak yang memiliki dua sosok ibu dalam hidupnya."
+    },
+    {
+      "title": "Si Janggut Mengencingi Herucakra",
+      "author": "Seno Gumira Ajidarma",
+      "year": 2000,
+      "genre": "Satire",
+      "pages": 160,
+      "rating": 8.2,
+      "summary": "Kritik sosial-politik lewat kisah fiksi tentang tokoh misterius bernama Si Janggut."
+    },
+    {
+      "title": "Burung Kayu",
+      "author": "Nirwan Dewanto",
+      "year": 2012,
+      "genre": "Puisi Prosa",
+      "pages": 130,
+      "rating": 7.9,
+      "summary": "Kumpulan puisi dan prosa puitis yang mengeksplorasi tubuh, sejarah, dan alam."
+    },
+    {
+      "title": "Ikan-Ikan dari Laut Merah",
+      "author": "Idrus",
+      "year": 1977,
+      "genre": "Sejarah",
+      "pages": 160,
+      "rating": 8.1,
+      "summary": "Cerpen-cerpen berlatar perjuangan dan pergolakan sosial pasca-kemerdekaan."
+    },
+    {
+      "title": "Sunset di Tubuh Sang Bima",
+      "author": "Afrizal Malna",
+      "year": 2014,
+      "genre": "Puisi Eksperimental",
+      "pages": 160,
+      "rating": 8,
+      "summary": "Puisi-puisi yang menghadirkan eksplorasi tubuh, bahasa, dan realitas urban."
+    },
+    {
+      "title": "Seteru 3 Agama",
+      "author": "Aguk Irawan MN",
+      "year": 2017,
+      "genre": "Religi Sejarah",
+      "pages": 400,
+      "rating": 8.4,
+      "summary": "Kisah tentang cinta, konflik, dan spiritualitas di tengah perbedaan agama."
+    },
+    {
+      "title": "Pengakuan Eks Parasit Lajang",
+      "author": "Ayu Utami",
+      "year": 2013,
+      "genre": "Autobiografi",
+      "pages": 275,
+      "rating": 8.1,
+      "summary": "Catatan reflektif Ayu Utami tentang pilihan hidup dan identitas sebagai perempuan."
+    },
+    {
+      "title": "Blues Merbabu",
+      "author": "Emha Ainun Nadjib",
+      "year": 1995,
+      "genre": "Esai Sastra",
+      "pages": 215,
+      "rating": 8.3,
+      "summary": "Catatan perjalanan dan refleksi spiritual Cak Nun saat mendaki Gunung Merbabu."
+    },
+    {
+      "title": "Bekisar Merah",
+      "author": "Ahmad Tohari",
+      "year": 1993,
+      "genre": "Sosial",
+      "pages": 296,
+      "rating": 8.6,
+      "summary": "Perjalanan hidup Lasi, gadis desa yang dipaksa memasuki dunia glamour Jakarta."
+    },
+    {
+      "title": "Lolong Anjing di Bulan",
+      "author": "Arafat Nur",
+      "year": 2010,
+      "genre": "Sosial",
+      "pages": 268,
+      "rating": 8.3,
+      "summary": "Kisah kekerasan dan kemanusiaan di tengah konflik berkepanjangan di Aceh."
+    },
+    {
+      "title": "Notasi",
+      "author": "Morra Quatro",
+      "year": 2013,
+      "genre": "Romansa",
+      "pages": 288,
+      "rating": 8.1,
+      "summary": "Kisah cinta di era reformasi yang terjalin lewat catatan dan musik."
+    },
+    {
+      "title": "Melukis Pelangi",
+      "author": "Oki Setiana Dewi",
+      "year": 2011,
+      "genre": "Autobiografi",
+      "pages": 208,
+      "rating": 8,
+      "summary": "Perjalanan hidup Oki dari gadis biasa hingga menjadi inspirasi hijrah."
+    },
+    {
+      "title": "Jalan Tak Ada Ujung",
+      "author": "Mochtar Lubis",
+      "year": 1952,
+      "genre": "Sejarah",
+      "pages": 212,
+      "rating": 8.6,
+      "summary": "Kisah perjuangan seorang guru melawan ketakutannya di masa penjajahan Belanda."
+    },
+    {
+      "title": "Athirah",
+      "author": "Alberthiene Endah",
+      "year": 2013,
+      "genre": "Biografi",
+      "pages": 320,
+      "rating": 8.4,
+      "summary": "Kisah hidup ibunda Jusuf Kalla yang penuh ketegaran dan inspirasi."
+    },
+    {
+      "title": "Pintu Terlarang",
+      "author": "Sekar Ayu Asmara",
+      "year": 2004,
+      "genre": "Thriller Psikologi",
+      "pages": 260,
+      "rating": 8,
+      "summary": "Rahasia gelap dalam kehidupan seorang seniman yang sukses."
+    },
+    {
+      "title": "Mata yang Enak Dipandang",
+      "author": "Ahmad Tohari",
+      "year": 1997,
+      "genre": "Kumpulan Cerpen",
+      "pages": 160,
+      "rating": 8.5,
+      "summary": "Kumpulan cerita pendek yang menggali potret kehidupan rakyat kecil."
+    },
+    {
+      "title": "Kekasih Musim Gugur",
+      "author": "Dee Lestari",
+      "year": 2022,
+      "genre": "Puisi",
+      "pages": 112,
+      "rating": 8,
+      "summary": "Kumpulan puisi tentang cinta, kehilangan, dan perenungan hidup."
+    },
+    {
+      "title": "Tuhan Izinkan Aku Menjadi Pelacur",
+      "author": "Muhidin M. Dahlan",
+      "year": 2003,
+      "genre": "Sosial",
+      "pages": 240,
+      "rating": 8.2,
+      "summary": "Kritik pedas tentang kemunafikan agama dan realitas sosial yang keras."
+    },
+    {
+      "title": "Mawar Hitam",
+      "author": "Djenar Maesa Ayu",
+      "year": 2004,
+      "genre": "Drama",
+      "pages": 220,
+      "rating": 7.9,
+      "summary": "Kisah tentang perempuan yang mencari jati diri di tengah luka dan cinta."
+    },
+    {
+      "title": "Kasidah Sunyi",
+      "author": "Acep Zamzam Noor",
+      "year": 2015,
+      "genre": "Puisi Religi",
+      "pages": 120,
+      "rating": 8,
+      "summary": "Puisi-puisi reflektif yang mendalami spiritualitas dan hubungan manusia dengan Tuhan."
+    },
+    {
+      "title": "Tuhan dan Hal-Hal yang Tak Selesai",
+      "author": "Goenawan Mohamad",
+      "year": 2019,
+      "genre": "Esai",
+      "pages": 270,
+      "rating": 8.3,
+      "summary": "Kumpulan esai reflektif tentang Tuhan, seni, dan kehidupan manusia modern."
+    },
+    {
+      "title": "Penari dari Serui",
+      "author": "Dewi Anggraeni",
+      "year": 2014,
+      "genre": "Sosial",
+      "pages": 228,
+      "rating": 8.1,
+      "summary": "Kisah perempuan Papua yang berjuang menemukan identitasnya di tengah arus modernitas."
+    },
+    {
+      "title": "Namaku Alam",
+      "author": "Remy Sylado",
+      "year": 2004,
+      "genre": "Drama",
+      "pages": 320,
+      "rating": 8,
+      "summary": "Perjalanan spiritual seorang lelaki bernama Alam yang mencari makna hidup."
+    },
+    {
+      "title": "Lampuki",
+      "author": "Arafat Nur",
+      "year": 2011,
+      "genre": "Sosial",
+      "pages": 292,
+      "rating": 8.4,
+      "summary": "Novel berlatar konflik Aceh yang menyayat dan penuh ironi."
+    },
+    {
+      "title": "Serat Centhini",
+      "author": "Tim Penulis",
+      "year": 1814,
+      "genre": "Klasik",
+      "pages": 722,
+      "rating": 9,
+      "summary": "Karya sastra klasik Jawa yang merangkum kehidupan, filsafat, dan spiritualitas."
+    },
+    {
+      "title": "Negeri Senja",
+      "author": "Seno Gumira Ajidarma",
+      "year": 2003,
+      "genre": "Distopia",
+      "pages": 256,
+      "rating": 8.2,
+      "summary": "Kisah tentang negeri yang hanya mengenal senja, dipenuhi simbol dan teka-teki."
+    },
+    {
+      "title": "Sunyi di Dada Sumirah",
+      "author": "Artie Ahmad",
+      "year": 2017,
+      "genre": "Sosial",
+      "pages": 284,
+      "rating": 8.1,
+      "summary": "Potret kehidupan buruh gendong perempuan yang penuh luka batin."
+    },
+    {
+      "title": "Orang-Orang Proyek",
+      "author": "Ahmad Tohari",
+      "year": 2002,
+      "genre": "Sosial",
+      "pages": 280,
+      "rating": 8.3,
+      "summary": "Kisah ironi para pekerja proyek pembangunan yang sarat korupsi."
+    },
+    {
+      "title": "Mata dan Mantra",
+      "author": "Okky Madasari",
+      "year": 2018,
+      "genre": "Fantasi",
+      "pages": 304,
+      "rating": 8,
+      "summary": "Kisah petualangan Mata, seorang anak yang bertemu dunia penuh magis."
+    },
+    {
+      "title": "9 dari Nadira",
+      "author": "Leila S. Chudori",
+      "year": 2009,
+      "genre": "Drama",
+      "pages": 272,
+      "rating": 8.5,
+      "summary": "Kisah perjalanan emosional Nadira yang mencari makna kehilangan ibunya."
+    },
+    {
+      "title": "Kerumunan Terakhir",
+      "author": "Okky Madasari",
+      "year": 2016,
+      "genre": "Sosial",
+      "pages": 288,
+      "rating": 8.1,
+      "summary": "Kisah tentang identitas, eksistensi, dan pencarian makna di dunia digital."
+    },
+    {
+      "title": "Noktah Merah Perkawinan",
+      "author": "Ika Natassa",
+      "year": 2018,
+      "genre": "Drama",
+      "pages": 412,
+      "rating": 8.2,
+      "summary": "Drama rumah tangga yang penuh konflik batin dan pilihan sulit."
+    },
+    {
+      "title": "Selamat Tinggal",
+      "author": "Tere Liye",
+      "year": 2020,
+      "genre": "Drama",
+      "pages": 400,
+      "rating": 8.5,
+      "summary": "Perjuangan seorang mahasiswa melawan plagiarisme dan pencarian jati diri."
+    },
+    {
+      "title": "Mencari Tepi Langit",
+      "author": "Fira Basuki",
+      "year": 2007,
+      "genre": "Inspirasi",
+      "pages": 256,
+      "rating": 8,
+      "summary": "Kisah perjalanan spiritual mencari makna kebahagiaan sejati."
+    },
+    {
+      "title": "Gendhis dan Embun",
+      "author": "Renny Yaniar",
+      "year": 2011,
+      "genre": "Drama",
+      "pages": 180,
+      "rating": 7.8,
+      "summary": "Kisah persahabatan dua perempuan yang diuji oleh cinta dan rahasia lama."
+    },
+    {
+      "title": "Akar",
+      "author": "Dee Lestari",
+      "year": 2002,
+      "genre": "Spiritual",
+      "pages": 440,
+      "rating": 8.6,
+      "summary": "Perjalanan spiritual Bodhi mencari kebenaran di jalanan Asia."
+    },
+    {
+      "title": "Ronggeng Dukuh Paruk",
+      "author": "Ahmad Tohari",
+      "year": 1982,
+      "genre": "Sosial",
+      "pages": 310,
+      "rating": 8.9,
+      "summary": "Tragedi cinta dan sejarah seorang penari ronggeng di desa kecil."
+    },
+    {
+      "title": "Tanah Tabu",
+      "author": "Anindita S. Thayf",
+      "year": 2009,
+      "genre": "Sosial",
+      "pages": 176,
+      "rating": 8.1,
+      "summary": "Perjuangan hidup perempuan Papua di tengah konflik sosial."
+    },
+    {
+      "title": "Supernova: Ksatria, Putri, dan Bintang Jatuh",
+      "author": "Dee Lestari",
+      "year": 2001,
+      "genre": "Fiksi Ilmiah",
+      "pages": 340,
+      "rating": 8.7,
+      "summary": "Eksperimen cerita cinta sains yang filosofis dan penuh intrik."
+    },
+    {
+      "title": "Manjali dan Cakrabirawa",
+      "author": "Ayu Utami",
+      "year": 2010,
+      "genre": "Misteri",
+      "pages": 400,
+      "rating": 8,
+      "summary": "Perjalanan mencari pusaka dan menguak sejarah kelam masa lalu."
+    },
+    {
+      "title": "Pukat",
+      "author": "Tere Liye",
+      "year": 2013,
+      "genre": "Keluarga",
+      "pages": 320,
+      "rating": 8.3,
+      "summary": "Kisah anak kedua keluarga Lematang yang cerdas namun keras kepala."
+    },
+    {
+      "title": "Eliana",
+      "author": "Tere Liye",
+      "year": 2013,
+      "genre": "Keluarga",
+      "pages": 320,
+      "rating": 8.4,
+      "summary": "Kisah anak sulung keluarga Lematang yang pemberani dan penuh tanggung jawab."
+    },
+    {
+      "title": "Sebuah Wilayah yang Tidak Ada di Google Earth",
+      "author": "Joko Pinurbo",
+      "year": 2018,
+      "genre": "Puisi Fiksi",
+      "pages": 160,
+      "rating": 8,
+      "summary": "Kumpulan puisi absurd dan reflektif tentang dunia digital dan manusia."
+    },
+    {
+      "title": "Entrok",
+      "author": "Okky Madasari",
+      "year": 2010,
+      "genre": "Sosial",
+      "pages": 280,
+      "rating": 8.5,
+      "summary": "Kisah perempuan desa yang melawan ketidakadilan Orde Baru."
+    },
+    {
+      "title": "Maryam",
+      "author": "Okky Madasari",
+      "year": 2012,
+      "genre": "Sosial",
+      "pages": 312,
+      "rating": 8.4,
+      "summary": "Perjalanan seorang Ahmadiyah yang mencari hak hidup dan cinta."
+    },
+    {
+      "title": "Pasung Jiwa",
+      "author": "Okky Madasari",
+      "year": 2013,
+      "genre": "Psikologi",
+      "pages": 312,
+      "rating": 8.3,
+      "summary": "Pencarian identitas diri di tengah norma dan budaya yang menekan."
+    },
+    {
+      "title": "Tiga Sandera Terakhir",
+      "author": "Ahmad Fuadi",
+      "year": 2019,
+      "genre": "Thriller",
+      "pages": 384,
+      "rating": 8.4,
+      "summary": "Kisah penyelamatan sandera di pedalaman Papua yang penuh intrik."
+    },
+    {
+      "title": "Negeri Lima Menara",
+      "author": "Ahmad Fuadi",
+      "year": 2009,
+      "genre": "Inspirasi",
+      "pages": 400,
+      "rating": 8.7,
+      "summary": "Perjalanan mimpi anak pesantren hingga menembus dunia internasional."
+    },
+    {
+      "title": "Mata dan Rahasia Pulau Gapi",
+      "author": "Okky Puspa Madasari",
+      "year": 2018,
+      "genre": "Petualangan",
+      "pages": 232,
+      "rating": 8.2,
+      "summary": "Petualangan Mata mengungkap misteri Pulau Gapi yang penuh rahasia."
+    },
+    {
+      "title": "Cinta Dalam Gelas Kopi",
+      "author": "Eka Kurniawan",
+      "year": 2019,
+      "genre": "Romansa",
+      "pages": 212,
+      "rating": 7.8,
+      "summary": "Kisah cinta sederhana yang terjalin di warung kopi kecil."
+    },
+    {
+      "title": "Amarah",
+      "author": "Kuntowijoyo",
+      "year": 2002,
+      "genre": "Drama",
+      "pages": 312,
+      "rating": 8.2,
+      "summary": "Mengisahkan pergulatan batin seorang pemuda di tengah ketidakadilan sosial."
+    },
+    {
+      "title": "Gadis Teladan",
+      "author": "Abidah El Khalieqy",
+      "year": 2015,
+      "genre": "Inspiratif",
+      "pages": 280,
+      "rating": 8.1,
+      "summary": "Kisah inspiratif seorang gadis desa yang berjuang mengejar pendidikan tinggi."
+    },
+    {
+      "title": "Kering",
+      "author": "Toha Mohtar",
+      "year": 1972,
+      "genre": "Sosial",
+      "pages": 232,
+      "rating": 7.9,
+      "summary": "Potret kehidupan masyarakat desa di tengah krisis kekeringan panjang."
+    },
+    {
+      "title": "Selir Keempat",
+      "author": "Lan Fang",
+      "year": 2005,
+      "genre": "Sejarah",
+      "pages": 276,
+      "rating": 8.3,
+      "summary": "Kisah tragis tentang cinta terlarang di lingkungan istana."
+    },
+    {
+      "title": "Sebelum Hujan Datang",
+      "author": "Budiman S. Hartoyo",
+      "year": 2016,
+      "genre": "Drama",
+      "pages": 256,
+      "rating": 8,
+      "summary": "Kisah keluarga yang menghadapi kenyataan pahit saat krisis ekonomi melanda."
+    },
+    {
+      "title": "Tanah Para Bandit",
+      "author": "Teguh Affandi",
+      "year": 2018,
+      "genre": "Aksi",
+      "pages": 300,
+      "rating": 8.2,
+      "summary": "Perjuangan seorang pemuda melawan ketidakadilan di kampung halamannya."
+    },
+    {
+      "title": "Kubah Besar",
+      "author": "Ahmad Tohari",
+      "year": 1995,
+      "genre": "Religi",
+      "pages": 320,
+      "rating": 8.4,
+      "summary": "Kisah pembangunan masjid besar di sebuah desa kecil dengan intrik di dalamnya."
+    },
+    {
+      "title": "Cermin",
+      "author": "Putra Gara",
+      "year": 2014,
+      "genre": "Fiksi Kontemporer",
+      "pages": 240,
+      "rating": 8,
+      "summary": "Refleksi hidup seorang anak muda yang terjerumus dalam budaya konsumtif."
+    },
+    {
+      "title": "Matahari-Matahari Kecil",
+      "author": "Afrizal Malna",
+      "year": 2010,
+      "genre": "Puisi",
+      "pages": 184,
+      "rating": 7.8,
+      "summary": "Kumpulan puisi kontemporer tentang kehidupan urban yang penuh kontradiksi."
+    },
+    {
+      "title": "Tanjung Kemarau",
+      "author": "Kuntowijoyo",
+      "year": 1998,
+      "genre": "Sosial",
+      "pages": 296,
+      "rating": 8.1,
+      "summary": "Potret sosial masyarakat pesisir yang menghadapi kemarau panjang."
+    },
+    {
+      "title": "Kepada Cium",
+      "author": "Joko Pinurbo",
+      "year": 2011,
+      "genre": "Puisi",
+      "pages": 164,
+      "rating": 8.5,
+      "summary": "Kumpulan puisi bertema cinta dan kehidupan dalam gaya khas Jokpin."
+    },
+    {
+      "title": "Pohon Kenangan",
+      "author": "Gus Tf Sakai",
+      "year": 2006,
+      "genre": "Fiksi",
+      "pages": 270,
+      "rating": 8.3,
+      "summary": "Kisah perjalanan mengenang masa kecil dan cinta pertama di kampung halaman."
+    },
+    {
+      "title": "Bidadari Emas",
+      "author": "Taufik Ikram Jamil",
+      "year": 2009,
+      "genre": "Sejarah",
+      "pages": 304,
+      "rating": 8,
+      "summary": "Novel berlatar sejarah Melayu tentang perebutan harta dan takhta."
+    },
+    {
+      "title": "Bara di Penjuru Langit",
+      "author": "Widji Thukul",
+      "year": 1997,
+      "genre": "Puisi",
+      "pages": 210,
+      "rating": 8.7,
+      "summary": "Kumpulan puisi perlawanan dan suara hati rakyat kecil."
+    },
+    {
+      "title": "Kisah Murid Buddha",
+      "author": "Ajahn Brahm",
+      "year": 2015,
+      "genre": "Spiritual",
+      "pages": 228,
+      "rating": 8.5,
+      "summary": "Kumpulan kisah inspiratif yang mengajarkan makna hidup dari sudut pandang Buddhis."
+    },
+    {
+      "title": "Senja di Jakarta",
+      "author": "Mochtar Lubis",
+      "year": 1963,
+      "genre": "Sosial Politik",
+      "pages": 342,
+      "rating": 8.6,
+      "summary": "Potret realitas sosial Jakarta era 60-an yang penuh intrik politik dan ketidakadilan."
+    },
+    {
+      "title": "Cantik Itu Luka: Edisi Spesial",
+      "author": "Eka Kurniawan",
+      "year": 2018,
+      "genre": "Fiksi Sejarah",
+      "pages": 600,
+      "rating": 8.9,
+      "summary": "Edisi spesial dengan tambahan catatan proses kreatif di balik novel ikonik ini."
+    },
+    {
+      "title": "Suluk Maleman",
+      "author": "Emha Ainun Nadjib",
+      "year": 2014,
+      "genre": "Spiritual, Sosial",
+      "pages": 312,
+      "rating": 8.2,
+      "summary": "Kumpulan refleksi dan kritik sosial dengan pendekatan sufistik khas Emha."
+    },
+    {
+      "title": "Gadis Tangsi",
+      "author": "Abidah El Khalieqy",
+      "year": 2011,
+      "genre": "Sejarah, Drama",
+      "pages": 368,
+      "rating": 8.3,
+      "summary": "Kisah perjuangan perempuan tangsi melawan budaya patriarki di masa kolonial."
+    },
+    {
+      "title": "Sahabat",
+      "year": 2025,
+      "author": "NurAlZa",
+      "genre": "Sahabat",
+      "pages": 290,
+      "rating": "8.8",
+      "summary": "Persahabatan bagai kepompong"
+    },
+    {
+      "title": "test",
+      "author": "husna",
+      "year": "2022",
+      "genre": "best",
+      "pages": "220",
+      "rating": "9.9",
+      "summary": "the best"
+    },
+    {
+      "title": "test2",
+      "author": "Alhusna",
+      "year": "2025",
+      "genre": "bestie",
+      "pages": "225",
+      "rating": "9.8",
+      "summary": "good things"
+    }
+  ]
+}
