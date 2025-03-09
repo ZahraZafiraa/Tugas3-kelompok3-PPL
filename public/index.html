@@ -279,7 +279,17 @@
         .btn-detail:hover {
             background-color: var(--primary-dark);
         }
-        
+
+        .btn-edit {
+            background-color: var(--primary);
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-edit:hover {
+            background-color: var(--primary-dark);
+        }
+                
         .btn-delete {
             background-color: var(--danger);
             color: white;
@@ -452,6 +462,53 @@
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             }
         }
+
+        
+        .pagination {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+        .pagination span {
+            font-weight: bold;
+        }
+        .pagination button {
+            background-color: #007bff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            transition: 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #0056b3;
+        }
+        .pagination button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        #showTopRated {
+            margin-bottom: 20px;
+            background-color: var(--secondary);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #showTopRated:hover {
+            background-color: #e6950a;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -530,6 +587,9 @@
             
             <div class="content">
                 <h2>Daftar Novel</h2>
+                <button id="showTopRated" class="btn btn-primary">
+                    <i class="fas fa-star"></i> Tampilkan Novel dengan Rating Tertinggi
+                </button>
                 <div id="novelsContainer" class="novels-list">
                     <div class="loading">
                         <i class="fas fa-spinner"></i>
@@ -567,6 +627,58 @@
             <div class="modal-summary" id="modalSummary"></div>
         </div>
     </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-times modal-close" id="closeEditModal"></i>
+            <h2>Edit Novel</h2>
+            <form id="editNovelForm">
+                <div class="form-group">
+                    <label for="editTitle">Judul</label>
+                    <input type="text" id="editTitle" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="editAuthor">Penulis</label>
+                    <input type="text" id="editAuthor" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="editYear">Tahun Terbit</label>
+                    <input type="number" id="editYear" name="year" min="1800" max="2099" required>
+                </div>
+                <div class="form-group">
+                    <label for="editGenre">Genre</label>
+                    <select id="editGenre" name="genre" required>
+                        <option value="">Pilih Genre</option>
+                        <option value="Fiksi">Fiksi</option>
+                        <option value="Non-Fiksi">Non-Fiksi</option>
+                        <option value="Misteri">Misteri</option>
+                        <option value="Romansa">Romansa</option>
+                        <option value="Petualangan">Petualangan</option>
+                        <option value="Fantasi">Fantasi</option>
+                        <option value="Sains Fiksi">Sains Fiksi</option>
+                        <option value="Horor">Horor</option>
+                        <option value="Sejarah">Sejarah</option>
+                        <option value="Biografi">Biografi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="editPages">Jumlah Halaman</label>
+                    <input type="number" id="editPages" name="pages" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="editRating">Rating (1-5)</label>
+                    <input type="number" id="editRating" name="rating" min="1" max="5" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="editSummary">Ringkasan</label>
+                    <textarea id="editSummary" name="summary" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Simpan Perubahan
+                </button>
+            </form>
+        </div>
+    </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -579,8 +691,12 @@
             const detailModal = document.getElementById('detailModal');
             const closeModal = document.getElementById('closeModal');
             
-            // Load all novels when page loads
-            loadNovels();
+            let novels = [];
+            let currentPage = 1;
+            const novelsPerPage = 6;
+            const paginationContainer = document.createElement('div');
+            paginationContainer.id = 'pagination';
+            document.querySelector('.content').prepend(paginationContainer);
             
             // Add event listeners
             addNovelForm.addEventListener('submit', addNovel);
@@ -594,6 +710,17 @@
                 detailModal.style.display = 'none';
             });
             
+            document.getElementById('closeEditModal').addEventListener('click', function() {
+                document.getElementById('editModal').style.display = 'none';
+            });
+
+            novelsContainer.addEventListener('click', function(event) {
+                if (event.target.closest('.btn-edit')) {
+                    const title = event.target.closest('.btn-edit').getAttribute('data-title');
+                    showEditForm(title);
+                }
+            });
+
             // Close modal when clicking outside of it
             window.addEventListener('click', function(event) {
                 if (event.target === detailModal) {
@@ -601,6 +728,30 @@
                 }
             });
             
+            novelsContainer.addEventListener('click', function(event) {
+                if (event.target.closest('.btn-delete')) {
+                    const title = event.target.closest('.btn-delete').getAttribute('data-title');
+                    if (confirm(`Apakah Anda yakin ingin menghapus novel "${title}"?`)) {
+                        fetch(`http://localhost:3000/novels/${title}`, {
+                            method: 'DELETE'
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.message === "Novel berhasil dihapus.") {
+                                showAlert('Novel berhasil dihapus.', 'success');
+                                loadNovels();
+                            } else {
+                                showAlert(data.message, 'error');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error deleting novel:', error);
+                            showAlert('Gagal menghapus novel. Silakan coba lagi.', 'error');
+                        });
+                    }
+                }
+            });
+
             // Function to load all novels
             function loadNovels() {
                 novelsContainer.innerHTML = '<div class="loading"><i class="fas fa-spinner"></i></div>';
@@ -608,7 +759,9 @@
                 fetch('http://localhost:3000/novels')
                     .then(response => response.json())
                     .then(data => {
-                        displayNovels(data.novels);
+                        novels = data.novels;
+                        displayNovels();
+                        setupPagination();
                     })
                     .catch(error => {
                         console.error('Error fetching novels:', error);
@@ -618,15 +771,18 @@
             }
             
             // Function to display novels
-            function displayNovels(novels) {
+            function displayNovels() {
                 novelsContainer.innerHTML = '';
-                
-                if (novels.length === 0) {
-                    displayEmptyState('Belum ada novel tersedia. Tambahkan novel baru!');
+                const start = (currentPage - 1) * novelsPerPage;
+                const end = start + novelsPerPage;
+                const paginatedNovels = novels.slice(start, end);
+
+                if (paginatedNovels.length === 0) {
+                    novelsContainer.innerHTML = '<p>Tidak ada novel yang ditemukan.</p>';
                     return;
                 }
-                
-                novels.forEach(novel => {
+
+                paginatedNovels.forEach(novel => {
                     const novelCard = document.createElement('div');
                     novelCard.className = 'novel-card';
                     novelCard.innerHTML = `
@@ -648,6 +804,12 @@
                                 <button class="btn-detail" data-title="${novel.title}">
                                     <i class="fas fa-info-circle"></i> Detail
                                 </button>
+                                <button class="btn-edit" data-title="${novel.title}">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                                <button class="btn-delete" data-title="${novel.title}">
+                                    <i class="fas fa-trash"></i> Hapus
+                                </button>
                             </div>
                         </div>
                     `;
@@ -662,6 +824,41 @@
                 });
             }
             
+            // Load all novels when page loads
+            loadNovels();
+
+            function setupPagination() {
+                paginationContainer.innerHTML = '';
+                const totalPages = Math.ceil(novels.length / novelsPerPage);
+
+                const paginationText = document.createElement('span');
+                paginationText.textContent = `${(currentPage - 1) * novelsPerPage + 1}-${Math.min(currentPage * novelsPerPage, novels.length)} dari ${novels.length}`;
+                paginationContainer.appendChild(paginationText);
+
+                const prevButton = document.createElement('button');
+                prevButton.innerHTML = '&lt;';
+                prevButton.disabled = currentPage === 1;
+                prevButton.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        displayNovels();
+                        setupPagination();
+                    }
+                });
+                paginationContainer.appendChild(prevButton);
+
+                const nextButton = document.createElement('button');
+                nextButton.innerHTML = '&gt;';
+                nextButton.disabled = currentPage === totalPages;
+                nextButton.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        displayNovels();
+                        setupPagination();
+                    }
+                });
+                paginationContainer.appendChild(nextButton);
+            }
             // Function to show novel detail in modal
             function showNovelDetail(title) {
                 fetch(`http://localhost:3000/novels/${title}`)
@@ -683,6 +880,118 @@
                     });
             }
             
+            function showEditForm(title) {
+                fetch(`http://localhost:3000/novels/${title}`)
+                    .then(response => response.json())
+                    .then(novel => {
+                        document.getElementById('editTitle').value = novel.title;
+                        document.getElementById('editAuthor').value = novel.author;
+                        document.getElementById('editYear').value = novel.year;
+                        document.getElementById('editGenre').value = novel.genre;
+                        document.getElementById('editPages').value = novel.pages;
+                        document.getElementById('editRating').value = novel.rating;
+                        document.getElementById('editSummary').value = novel.summary;
+
+                        document.getElementById('editModal').style.display = 'flex';
+                    })
+                    .catch(error => {
+                        console.error('Error fetching novel detail:', error);
+                        showAlert('Gagal memuat data novel untuk diedit.', 'error');
+                    });
+            }
+
+            document.getElementById('showTopRated').addEventListener('click', showTopRatedNovel);
+
+            // Fungsi untuk mengambil dan menampilkan novel dengan rating tertinggi
+            function showTopRatedNovel() {
+                fetch('http://localhost:3000/novels/top-rated')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Jika server mengembalikan pesan error
+                        if (data.message) {
+                            showAlert(data.message, 'error');
+                            novelsContainer.innerHTML = '<p>Tidak ada novel yang ditemukan.</p>';
+                            return;
+                        }
+
+                        // Kosongkan daftar novel
+                        novelsContainer.innerHTML = '';
+
+                        // Tampilkan novel dengan rating tertinggi
+                        const novelCard = document.createElement('div');
+                        novelCard.className = 'novel-card';
+                        novelCard.innerHTML = `
+                            <div class="novel-header">
+                                <h3 class="novel-title">${data.title}</h3>
+                                <p class="novel-author">oleh ${data.author}</p>
+                                <div class="novel-rating">${data.rating}</div>
+                            </div>
+                            <div class="novel-body">
+                                <div class="novel-info">
+                                    <span><i class="fas fa-calendar"></i> ${data.year}</span>
+                                    <span><i class="fas fa-book"></i> ${data.pages} hal</span>
+                                </div>
+                                <div>
+                                    <span class="badge badge-primary">${data.genre}</span>
+                                </div>
+                                <p class="novel-summary">${data.summary}</p>
+                                <div class="novel-actions">
+                                    <button class="btn-detail" data-title="${data.title}">
+                                        <i class="fas fa-info-circle"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+
+                        novelsContainer.appendChild(novelCard);
+
+                        // Tambahkan event listener untuk tombol detail
+                        const detailButton = novelCard.querySelector('.btn-detail');
+                        detailButton.addEventListener('click', function() {
+                            showNovelDetail(this.getAttribute('data-title'));
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error fetching top-rated novel:', error);
+                        showAlert('Gagal memuat novel dengan rating tertinggi.', 'error');
+                    });
+            }
+
+            document.getElementById('editNovelForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const title = document.getElementById('editTitle').value;
+                const novelData = {
+                    author: document.getElementById('editAuthor').value,
+                    year: parseInt(document.getElementById('editYear').value),
+                    genre: document.getElementById('editGenre').value,
+                    pages: parseInt(document.getElementById('editPages').value),
+                    rating: parseFloat(document.getElementById('editRating').value),
+                    summary: document.getElementById('editSummary').value
+                };
+
+                fetch(`http://localhost:3000/novels/${title}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(novelData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message === "Novel berhasil diperbarui!") {
+                        showAlert('Novel berhasil diperbarui!', 'success');
+                        document.getElementById('editModal').style.display = 'none';
+                        loadNovels();
+                    } else {
+                        showAlert(data.message, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error updating novel:', error);
+                    showAlert('Gagal memperbarui novel. Silakan coba lagi.', 'error');
+                });
+            });
             // Function to add a new novel
             function addNovel(e) {
                 e.preventDefault();
