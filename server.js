@@ -111,15 +111,50 @@ app.delete("/novels/:title", (req, res) => {
     res.json({ message: "Novel berhasil dihapus." });
 });
 
-// 🟢 GET: Ambil novel dengan rating tertinggi
-app.get("/novels/top-rated", (req, res) => {
+// 🟢 GET: Ambil novel dengan rating tertinggi (Versi Diperbaiki)
+app.get("/novels/topRated", (req, res) => {
     const novels = readNovels();
-    if (novels.length === 0) {
-        return res.status(404).json({ message: "Tidak ada novel tersedia." });
-    }
     
-    const topRatedNovel = novels.reduce((max, novel) => (novel.rating > max.rating ? novel : max), novels[0]);
-    res.json(topRatedNovel);
+    // 1. Handle database kosong
+    if (novels.length === 0) {
+        return res.status(404).json({
+            success: false,
+            message: "Database novel kosong"
+        });
+    }
+
+    // 2. Filter dan konversi rating ke number
+    const novelsWithValidRating = novels
+        .map(novel => ({
+            ...novel,
+            rating: parseFloat(novel.rating) // Konversi ke float
+        }))
+        .filter(novel => !isNaN(novel.rating)); // Hapus yang invalid
+
+    // 3. Cek hasil filter
+    if (novelsWithValidRating.length === 0) {
+        return res.status(404).json({
+            success: false,
+            message: "Tidak ada novel dengan rating valid"
+        });
+    }
+
+    // 4. Cari rating tertinggi
+    const bestNovel = novelsWithValidRating.reduce((max, novel) => 
+        novel.rating > max.rating ? novel : max
+    );
+
+    // 5. Format respons
+    res.json({
+        success: true,
+        data: {
+            title: bestNovel.title,
+            author: bestNovel.author,
+            rating: bestNovel.rating,
+            year: bestNovel.year,
+            genre: bestNovel.genre
+        }
+    });
 });
 
 // Jalankan server

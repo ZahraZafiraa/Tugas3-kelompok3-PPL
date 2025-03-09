@@ -540,7 +540,7 @@
         <div class="container header-content">
             <div class="logo">
                 <i class="fas fa-book-open"></i>
-                <span>Perpustakaan Novel</span>
+                <span>NovelHub</span>
             </div>
             <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="Cari novel...">
@@ -947,11 +947,20 @@
 
             // Fungsi untuk mengambil dan menampilkan novel dengan rating tertinggi
             function showTopRatedNovel() {
-                fetch('http://localhost:3000/novels/top-rated')
-                    .then(response => response.json())
+                console.log("Fetching top-rated novel..."); // Debug: Periksa apakah fungsi dipanggil
+                fetch('http://localhost:3000/novels/topRated')
+                    .then(response => {
+                        console.log("Response:", response); // Debug: Periksa respons fetch
+                        if (!response.ok) {
+                            throw new Error('Gagal mengambil data novel.');
+                        }
+                        return response.json();
+                    })
                     .then(data => {
+                        console.log("Data:", data); // Debug: Periksa data yang diterima
+
                         // Jika server mengembalikan pesan error
-                        if (data.message && data.message === "Novel tidak ditemukan.") {
+                        if (data.message) {
                             showAlert(data.message, 'error');
                             novelsContainer.innerHTML = '<p>Tidak ada novel yang ditemukan.</p>';
                             return;
