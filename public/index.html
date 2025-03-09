@@ -784,6 +784,9 @@
                     }
                 }
             });
+            
+            // Load all novels when page loads
+            loadNovels();
 
             // Function to load all novels
             function loadNovels() {
@@ -856,9 +859,6 @@
                     });
                 });
             }
-            
-            // Load all novels when page loads
-            loadNovels();
 
             function setupPagination() {
                 const totalPages = Math.ceil(novels.length / novelsPerPage);
@@ -875,8 +875,16 @@
                 // Disable tombol next jika di halaman terakhir
                 nextButton.disabled = currentPage === totalPages;
 
+                // Hapus event listener sebelumnya (jika ada)
+                prevButton.replaceWith(prevButton.cloneNode(true));
+                nextButton.replaceWith(nextButton.cloneNode(true));
+
+                // Dapatkan referensi baru ke tombol setelah clone
+                const newPrevButton = document.getElementById('prevPage');
+                const newNextButton = document.getElementById('nextPage');
+
                 // Event listener untuk tombol prev
-                prevButton.addEventListener('click', () => {
+                newPrevButton.addEventListener('click', () => {
                     if (currentPage > 1) {
                         currentPage--;
                         displayNovels();
@@ -885,7 +893,7 @@
                 });
 
                 // Event listener untuk tombol next
-                nextButton.addEventListener('click', () => {
+                newNextButton.addEventListener('click', () => {
                     if (currentPage < totalPages) {
                         currentPage++;
                         displayNovels();
