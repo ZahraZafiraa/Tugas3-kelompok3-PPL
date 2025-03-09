@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const app = express();
 const PORT = 3000;
-const novelsFilePath = "D:/gitkraken/PPL/Tugas3-kelompok3-PPL/novels.json";
+const novelsFilePath = "novels.json";
 
 // Middleware
 app.use(cors());
