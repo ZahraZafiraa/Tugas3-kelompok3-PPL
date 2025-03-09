@@ -78,6 +78,50 @@ app.post("/novels", (req, res) => {
     res.json({ message: "Novel berhasil ditambahkan!", data: newNovel });
 });
 
+// 🟡 PUT: Update novel berdasarkan judul
+app.put("/novels/:title", (req, res) => {
+    const { title } = req.params;
+    const { author, year, genre, pages, rating, summary } = req.body;
+
+    let novels = readNovels();
+    let novelIndex = novels.findIndex(n => n.title.toLowerCase() === title.toLowerCase());
+
+    if (novelIndex === -1) {
+        return res.status(404).json({ message: "Novel tidak ditemukan." });
+    }
+
+    novels[novelIndex] = { ...novels[novelIndex], author, year, genre, pages, rating, summary };
+    writeNovels(novels);
+
+    res.json({ message: "Novel berhasil diperbarui!", data: novels[novelIndex] });
+});
+
+// 🔴 DELETE: Hapus novel berdasarkan judul
+app.delete("/novels/:title", (req, res) => {
+    const { title } = req.params;
+    let novels = readNovels();
+    
+    const filteredNovels = novels.filter(n => n.title.toLowerCase() !== title.toLowerCase());
+    
+    if (filteredNovels.length === novels.length) {
+        return res.status(404).json({ message: "Novel tidak ditemukan." });
+    }
+    
+    writeNovels(filteredNovels);
+    res.json({ message: "Novel berhasil dihapus." });
+});
+
+// 🟢 GET: Ambil novel dengan rating tertinggi
+app.get("/novels/top-rated", (req, res) => {
+    const novels = readNovels();
+    if (novels.length === 0) {
+        return res.status(404).json({ message: "Tidak ada novel tersedia." });
+    }
+    
+    const topRatedNovel = novels.reduce((max, novel) => (novel.rating > max.rating ? novel : max), novels[0]);
+    res.json(topRatedNovel);
+});
+
 // Jalankan server
 app.listen(PORT, () => {
     console.log(`Server berjalan di http://localhost:${PORT}`);
