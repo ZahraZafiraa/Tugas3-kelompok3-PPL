@@ -807,7 +807,7 @@
             }
             
             // Function to display novels
-            function displayNovels() {
+            function displayNovels(novelsToDisplay = novels) {
                 novelsContainer.innerHTML = '';
                 const start = (currentPage - 1) * novelsPerPage;
                 const end = start + novelsPerPage;
@@ -1101,7 +1101,15 @@
                             novel.genre.toLowerCase().includes(searchTerm)
                         );
                         
+                        novels = filteredNovels;
+            
+                        // Reset halaman ke 1 setelah pencarian
+                        currentPage = 1;
+
                         displayNovels(filteredNovels);
+
+                        // Atur ulang paginasi
+                        setupPagination();
                     })
                     .catch(error => {
                         console.error('Error searching novels:', error);
