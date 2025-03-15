@@ -44,6 +44,7 @@ app.get("/novels", (req, res) => {
     res.json({ novels });
 });
 
+// 🟢 GET: Ambil novel dengan rating tertinggi (Versi Diperbaiki)
 app.get("/novels/top-rated", (req, res) => {
     let novels = readNovels();
     
@@ -123,71 +124,16 @@ app.put("/novels/:title", (req, res) => {
 
 // 🔴 DELETE: Hapus novel berdasarkan judul
 app.delete("/novels/:title", (req, res) => {
-    const { title } = req.params;
+    const title = decodeURIComponent(req.params.title).toLowerCase();
     let novels = readNovels();
-    
-    const filteredNovels = novels.filter(n => n.title.toLowerCase() !== title.toLowerCase());
-    
-    if (filteredNovels.length === novels.length) {
-        return res.status(404).json({ message: "Novel tidak ditemukan." });
-    }
-    
+
+    // Jika ditemukan, lanjut hapus
+    const filteredNovels = novels.filter(n => n.title.toLowerCase() !== title);
     writeNovels(filteredNovels);
+
     res.json({ message: "Novel berhasil dihapus." });
 });
 
-
-// 🟢 GET: Ambil novel dengan rating tertinggi (Versi Diperbaiki)
-
-
-
-// app.get("/novels/topRated", (req, res) => {
-//     let novels = readNovels();
-//     console.log("Semua novel yang dibaca dari database:", novels);
-
-//     if (!novels || novels.length === 0) {
-//         console.log("Database novel kosong!");
-//         return res.status(404).json({
-//             success: false,
-//             message: "Database novel kosong"
-//         });
-//     }
-
-//     // Filter hanya novel yang memiliki rating valid
-//     const novelsWithValidRating = novels.filter(novel => 
-//         typeof novel.rating === "number" && !isNaN(novel.rating)
-//     );
-
-//     console.log("Novel dengan rating valid:", novelsWithValidRating);
-
-//     if (novelsWithValidRating.length === 0) {
-//         console.log("Tidak ada novel dengan rating valid!");
-//         return res.status(404).json({
-//             success: false,
-//             message: "Tidak ada novel dengan rating valid"
-//         });
-//     }
-
-//     // Cari novel dengan rating tertinggi
-//     const bestNovel = novelsWithValidRating.reduce((max, novel) =>
-//         novel.rating > max.rating ? novel : max
-//     );
-
-//     console.log("Novel terbaik:", bestNovel);
-
-//     res.json({
-//         success: true,
-//         data: {
-//             title: bestNovel.title || "Tidak diketahui",
-//             author: bestNovel.author || "Tidak diketahui",
-//             rating: bestNovel.rating ? bestNovel.rating.toFixed(1) : "N/A",
-//             year: bestNovel.year || "Tidak diketahui",
-//             genre: bestNovel.genre || "Tidak diketahui",
-//             pages: bestNovel.pages || "Tidak diketahui",
-//             summary: bestNovel.summary || "Tidak ada ringkasan tersedia"
-//         }
-//     });
-// });
 
 
 // Jalankan server

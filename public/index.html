@@ -299,6 +299,12 @@
         .btn-delete:hover {
             background-color: #dc2626;
         }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
         
         .loading {
             display: flex;
@@ -517,13 +523,28 @@
             font-weight: 500;
             color: var(--dark);
         }
+        #showAllNovels {
+            margin-bottom: 20px;
+            background-color: #20c963;
+            border: none;       
+            color: white;
+            padding: 10px 0px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
+        #showAllNovels:hover {
+            background-color: #158d45;
+            transform: translateY(-2px);
+        }
+        
         #showTopRated {
             margin-bottom: 20px;
             background-color: var(--secondary);
-            border: none;
+            border: none;       
             color: white;
-            padding: 10px 15px;
+            padding: 10px 0px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
@@ -611,9 +632,14 @@
             
             <div class="content">
                 <h2>Daftar Novel</h2>
-                <button id="showTopRated" class="btn btn-primary">
-                    <i class="fas fa-star"></i> Tampilkan Novel dengan Rating Tertinggi
-                </button>
+                <div class="button-group">
+                    <button id="showAllNovels" class="btn btn-primary">
+                        <i class="fas fa-book"></i> Tampilkan Semua Novel
+                    </button>
+                    <button id="showTopRated" class="btn btn-primary">
+                        <i class="fas fa-star"></i> Tampilkan Novel dengan Rating Tertinggi
+                    </button>
+                </div>
                 <div id="novelsContainer" class="novels-list">
                     <div class="loading">
                         <i class="fas fa-spinner"></i>
@@ -723,6 +749,7 @@
             const searchButton = document.getElementById('searchButton');
             const detailModal = document.getElementById('detailModal');
             const closeModal = document.getElementById('closeModal');
+            const showAllNovelsButton = document.getElementById("showAllNovels");
             
             let novels = [];
             let currentPage = 1;
@@ -732,6 +759,7 @@
             document.querySelector('.content').prepend(paginationContainer);
             
             // Add event listeners
+            showAllNovelsButton.addEventListener("click", loadNovels);
             addNovelForm.addEventListener('submit', addNovel);
             searchButton.addEventListener('click', searchNovels);
             searchInput.addEventListener('keypress', function(e) {
@@ -993,6 +1021,12 @@
                                     <button class="btn-detail" data-title="${body.topRatedNovel.title}">
                                         <i class="fas fa-info-circle"></i> Detail
                                     </button>
+                                    <button class="btn-edit" data-title="${body.topRatedNovel.title}">
+                                    <i class="fas fa-edit"></i> Edit
+                                    </button>
+                                    <button class="btn-delete" data-title="${body.topRatedNovel.title}">
+                                        <i class="fas fa-trash"></i> Hapus
+                                    </button>
                                 </div>
                             </div>
                         `;
@@ -1000,8 +1034,42 @@
                         novelsContainer.appendChild(novelCard);
             
                         // Tambahkan event listener untuk tombol detail
-                        novelCard.querySelector('.btn-detail').addEventListener('click', function() {
-                            showNovelDetail(this.getAttribute('data-title'));
+                        novelsContainer.addEventListener('click', function(event) {
+                            if (event.target.closest('.btn-edit')) {
+                                const title = event.target.closest('.btn-edit').getAttribute('data-title');
+                                showEditForm(title);
+                            }
+                        });
+            
+                        // Close modal when clicking outside of it
+                        window.addEventListener('click', function(event) {
+                            if (event.target === detailModal) {
+                                detailModal.style.display = 'none';
+                            }
+                        });
+                        
+                        novelsContainer.addEventListener('click', function(event) {
+                            if (event.target.closest('.btn-delete')) {
+                                const title = event.target.closest('.btn-delete').getAttribute('data-title');
+                                if (confirm(`Apakah Anda yakin ingin menghapus novel "${title}"?`)) {
+                                    fetch(`http://localhost:3000/novels/${encodeURIComponent(title)}`, {
+                                        method: 'DELETE'
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.message === "Novel berhasil dihapus.") {
+                                            showAlert('Novel berhasil dihapus.', 'success');
+                                            loadNovels();
+                                        } else {
+                                            showAlert(data.message, 'error');
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Error deleting novel:', error);
+                                        showAlert('Gagal menghapus novel. Silakan coba lagi.', 'error');
+                                    });
+                                }
+                            }
                         });
                     })
                     .catch(error => {
