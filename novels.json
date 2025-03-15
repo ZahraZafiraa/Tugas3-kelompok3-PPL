@@ -1819,22 +1819,13 @@
       "summary": "Kisah perjuangan perempuan tangsi melawan budaya patriarki di masa kolonial."
     },
     {
-      "title": "Sahabat",
-      "year": 2025,
-      "author": "NurAlZa",
-      "genre": "Sahabat",
-      "pages": 290,
-      "rating": "8.8",
-      "summary": "Persahabatan bagai kepompong"
-    },
-    {
-      "title": "test",
-      "author": "husna",
-      "year": "2022",
-      "genre": "best",
-      "pages": "220",
-      "rating": "9.9",
-      "summary": "the best"
+      "title": "Husna",
+      "author": "ali",
+      "year": 2020,
+      "genre": "Fantasi",
+      "pages": 220,
+      "rating": 9.9,
+      "summary": "cantik"
     }
   ]
 }

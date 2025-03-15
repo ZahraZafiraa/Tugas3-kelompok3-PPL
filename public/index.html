@@ -649,7 +649,7 @@
                 </div>
                 <div class="info-item">
                     <i class="fas fa-star" style="color: var(--secondary);"></i>
-                    <span id="modalRating"></span>/5
+                    <span id="modalRating"></span>/10
                 </div>
                 <div class="info-item">
                     <i class="fas fa-tag"></i>
@@ -947,59 +947,60 @@
 
             // Fungsi untuk mengambil dan menampilkan novel dengan rating tertinggi
             function showTopRatedNovel() {
-                console.log("Fetching top-rated novel..."); // Debug: Periksa apakah fungsi dipanggil
-                fetch('http://localhost:3000/novels/topRated')
+                console.log("Fetching top-rated novel...");
+                
+                fetch('http://localhost:3000/novels/top-rated')
                     .then(response => {
-                        console.log("Response:", response); // Debug: Periksa respons fetch
-                        if (!response.ok) {
-                            throw new Error('Gagal mengambil data novel.');
-                        }
-                        return response.json();
+                        console.log("Response status:", response.status); // Debugging
+            
+                        return response.json().then(data => ({
+                            status: response.status,
+                            body: data
+                        }));
                     })
-                    .then(data => {
-                        console.log("Data:", data); // Debug: Periksa data yang diterima
-
-                        // Jika server mengembalikan pesan error
-                        if (data.message) {
-                            showAlert(data.message, 'error');
+                    .then(({ status, body }) => {
+                        console.log("Data diterima:", body);
+            
+                        // Tangani jika server mengembalikan error
+                        if (status !== 200) {
+                            showAlert(body.message || "Terjadi kesalahan", 'error');
                             novelsContainer.innerHTML = '<p>Tidak ada novel yang ditemukan.</p>';
                             return;
                         }
-
-                        // Kosongkan daftar novel
+            
+                        // Kosongkan daftar novel sebelum menambahkan yang baru
                         novelsContainer.innerHTML = '';
-
+            
                         // Tampilkan novel dengan rating tertinggi
                         const novelCard = document.createElement('div');
                         novelCard.className = 'novel-card';
                         novelCard.innerHTML = `
                             <div class="novel-header">
-                                <h3 class="novel-title">${data.title}</h3>
-                                <p class="novel-author">oleh ${data.author}</p>
-                                <div class="novel-rating">${data.rating}</div>
+                                <h3 class="novel-title">${body.topRatedNovel.title}</h3>
+                                <p class="novel-author">oleh ${body.topRatedNovel.author}</p>
+                                <div class="novel-rating">${body.topRatedNovel.rating}</div>
                             </div>
                             <div class="novel-body">
                                 <div class="novel-info">
-                                    <span><i class="fas fa-calendar"></i> ${data.year}</span>
-                                    <span><i class="fas fa-book"></i> ${data.pages} hal</span>
+                                    <span><i class="fas fa-calendar"></i> ${body.topRatedNovel.year}</span>
+                                    <span><i class="fas fa-book"></i> ${body.topRatedNovel.pages} hal</span>
                                 </div>
                                 <div>
-                                    <span class="badge badge-primary">${data.genre}</span>
+                                    <span class="badge badge-primary">${body.topRatedNovel.genre}</span>
                                 </div>
-                                <p class="novel-summary">${data.summary}</p>
+                                <p class="novel-summary">${body.topRatedNovel.summary}</p>
                                 <div class="novel-actions">
-                                    <button class="btn-detail" data-title="${data.title}">
+                                    <button class="btn-detail" data-title="${body.topRatedNovel.title}">
                                         <i class="fas fa-info-circle"></i> Detail
                                     </button>
                                 </div>
                             </div>
                         `;
-
+            
                         novelsContainer.appendChild(novelCard);
-
+            
                         // Tambahkan event listener untuk tombol detail
-                        const detailButton = novelCard.querySelector('.btn-detail');
-                        detailButton.addEventListener('click', function() {
+                        novelCard.querySelector('.btn-detail').addEventListener('click', function() {
                             showNovelDetail(this.getAttribute('data-title'));
                         });
                     })
@@ -1007,7 +1008,8 @@
                         console.error('Error fetching top-rated novel:', error);
                         showAlert('Gagal memuat novel dengan rating tertinggi.', 'error');
                     });
-            }
+            }            
+            
 
             document.getElementById('editNovelForm').addEventListener('submit', function(e) {
                 e.preventDefault();
